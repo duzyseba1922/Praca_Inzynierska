@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		800B711D23A5126600F590ED /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711323A5125E00F590ED /* InfoViewController.swift */; };
+		800B711E23A5126600F590ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711423A5125F00F590ED /* TabBarViewController.swift */; };
+		800B711F23A5126600F590ED /* FullNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711523A5126000F590ED /* FullNewsViewController.swift */; };
+		800B712023A5126600F590ED /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711623A5126000F590ED /* TableViewCell.swift */; };
+		800B712123A5126600F590ED /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711723A5126100F590ED /* NewsViewController.swift */; };
+		800B712223A5126600F590ED /* PlayerInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711823A5126200F590ED /* PlayerInfoController.swift */; };
+		800B712323A5126600F590ED /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711923A5126300F590ED /* ScheduleViewController.swift */; };
+		800B712423A5126600F590ED /* SquadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711A23A5126400F590ED /* SquadViewController.swift */; };
+		800B712523A5126600F590ED /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711B23A5126500F590ED /* TableViewController.swift */; };
+		800B712623A5126600F590ED /* PickClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711C23A5126600F590ED /* PickClubViewController.swift */; };
+		8016468F2391A4E600151A0B /* pickerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8016468E2391A4E600151A0B /* pickerImage.png */; };
+		8016AD392343659300E2848A /* 809767_football-emoji-png.png in Resources */ = {isa = PBXBuildFile; fileRef = 8016AD382343659300E2848A /* 809767_football-emoji-png.png */; };
+		8081EB89239557D300F974CA /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8081EB88239557D300F974CA /* Border.swift */; };
+		80A3D44F2345E6E300A1B2A8 /* icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D44D2345E6E300A1B2A8 /* icon120.png */; };
+		80A3D4502345E6E300A1B2A8 /* icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D44E2345E6E300A1B2A8 /* icon180.png */; };
+		80A3D4572346183700A1B2A8 /* icon87.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4522346183600A1B2A8 /* icon87.png */; };
+		80A3D4582346183700A1B2A8 /* icon60.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4532346183600A1B2A8 /* icon60.png */; };
+		80A3D4592346183700A1B2A8 /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4542346183600A1B2A8 /* icon80.png */; };
+		80A3D45A2346183700A1B2A8 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4552346183600A1B2A8 /* icon58.png */; };
+		80A3D45B2346183700A1B2A8 /* icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4562346183700A1B2A8 /* icon40.png */; };
+		80A3D460234619B700A1B2A8 /* Lech Poznań.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D45F234619B700A1B2A8 /* Lech Poznań.png */; };
+		80A3D4702346238100A1B2A8 /* Legia Warszawa.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4612346238000A1B2A8 /* Legia Warszawa.png */; };
+		80A3D4712346238100A1B2A8 /* Wisła Kraków.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4622346238000A1B2A8 /* Wisła Kraków.png */; };
+		80A3D4722346238100A1B2A8 /* Cracovia.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4632346238000A1B2A8 /* Cracovia.png */; };
+		80A3D4732346238100A1B2A8 /* Zagłębie Lubin.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4642346238000A1B2A8 /* Zagłębie Lubin.png */; };
+		80A3D4742346238100A1B2A8 /* ŁKS Łódź.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4652346238100A1B2A8 /* ŁKS Łódź.png */; };
+		80A3D4752346238100A1B2A8 /* Raków Częstochowa.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4662346238100A1B2A8 /* Raków Częstochowa.png */; };
+		80A3D4762346238100A1B2A8 /* Pogoń Szczecin.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4672346238100A1B2A8 /* Pogoń Szczecin.png */; };
+		80A3D4782346238100A1B2A8 /* Piast Gliwice.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4692346238100A1B2A8 /* Piast Gliwice.png */; };
+		80A3D4792346238100A1B2A8 /* Korona Kielce.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46A2346238100A1B2A8 /* Korona Kielce.png */; };
+		80A3D47A2346238100A1B2A8 /* Arka Gdynia.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46B2346238100A1B2A8 /* Arka Gdynia.png */; };
+		80A3D47B2346238100A1B2A8 /* Wisła Płock.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46C2346238100A1B2A8 /* Wisła Płock.png */; };
+		80A3D47C2346238100A1B2A8 /* Lechia Gdańsk.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46D2346238100A1B2A8 /* Lechia Gdańsk.png */; };
+		80A3D47D2346238100A1B2A8 /* Jagiellonia Białystok.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46E2346238100A1B2A8 /* Jagiellonia Białystok.png */; };
+		80A3D47E2346238100A1B2A8 /* Górnik Zabrze.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46F2346238100A1B2A8 /* Górnik Zabrze.png */; };
+		80A3D4802346256A00A1B2A8 /* Śląsk Wrocław.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D47F2346256A00A1B2A8 /* Śląsk Wrocław.png */; };
+		80A3D48223462A8400A1B2A8 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A3D48123462A8400A1B2A8 /* CheckInternet.swift */; };
+		80F54204239509D10066B833 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F54203239509D10066B833 /* CustomLoader.swift */; };
+		80F5420623950BCC0066B833 /* ekstralogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5420523950BCC0066B833 /* ekstralogo.png */; };
+		80F7DA1923A012F200EB7B03 /* Juliusz Letniowski.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7D9FC23A012F000EB7B03 /* Juliusz Letniowski.png */; };
+		80F7DA1A23A012F200EB7B03 /* Maciej Makuszewski.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7D9FD23A012F000EB7B03 /* Maciej Makuszewski.png */; };
+		80F7DA1B23A012F200EB7B03 /* Volodymyr Kostevych.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7D9FE23A012F000EB7B03 /* Volodymyr Kostevych.png */; };
+		80F7DA1C23A012F200EB7B03 /* Miłosz Mleczko.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7D9FF23A012F000EB7B03 /* Miłosz Mleczko.png */; };
+		80F7DA1D23A012F200EB7B03 /* Tomasz Dejewski.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0023A012F000EB7B03 /* Tomasz Dejewski.png */; };
+		80F7DA1E23A012F200EB7B03 /* Thomas Rogne.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0123A012F000EB7B03 /* Thomas Rogne.png */; };
+		80F7DA1F23A012F200EB7B03 /* Lubomir Satka.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0223A012F000EB7B03 /* Lubomir Satka.png */; };
+		80F7DA2023A012F200EB7B03 /* Karol Szymański.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0323A012F000EB7B03 /* Karol Szymański.png */; };
+		80F7DA2123A012F200EB7B03 /* Jakub Kamiński.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0423A012F000EB7B03 /* Jakub Kamiński.png */; };
+		80F7DA2223A012F200EB7B03 /* Krzysztof Bąkowski.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0523A012F100EB7B03 /* Krzysztof Bąkowski.png */; };
+		80F7DA2323A012F200EB7B03 /* Joao Amaral.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0623A012F100EB7B03 /* Joao Amaral.png */; };
+		80F7DA2423A012F200EB7B03 /* Kamil Jóźwiak.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0723A012F100EB7B03 /* Kamil Jóźwiak.png */; };
+		80F7DA2523A012F200EB7B03 /* Karlo Muhar.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0823A012F100EB7B03 /* Karlo Muhar.png */; };
+		80F7DA2623A012F200EB7B03 /* Christian Gytkjaer.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0923A012F100EB7B03 /* Christian Gytkjaer.png */; };
+		80F7DA2723A012F200EB7B03 /* Tymoteusz Klupś.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0A23A012F100EB7B03 /* Tymoteusz Klupś.png */; };
+		80F7DA2823A012F200EB7B03 /* Timur Zhamaletdinov.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0B23A012F100EB7B03 /* Timur Zhamaletdinov.png */; };
+		80F7DA2923A012F200EB7B03 /* Djordje Crnomarković.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0C23A012F100EB7B03 /* Djordje Crnomarković.png */; };
+		80F7DA2A23A012F200EB7B03 /* Darko Jevtić.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0D23A012F100EB7B03 /* Darko Jevtić.png */; };
+		80F7DA2B23A012F200EB7B03 /* Paweł Tomczyk.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0E23A012F100EB7B03 /* Paweł Tomczyk.png */; };
+		80F7DA2D23A012F200EB7B03 /* Robert Gumny.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1023A012F200EB7B03 /* Robert Gumny.png */; };
+		80F7DA2E23A012F200EB7B03 /* Filip Szymczak.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1123A012F200EB7B03 /* Filip Szymczak.png */; };
+		80F7DA2F23A012F200EB7B03 /* Mateusz Skrzypczak.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1223A012F200EB7B03 /* Mateusz Skrzypczak.png */; };
+		80F7DA3023A012F200EB7B03 /* Tomasz Cywka.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1323A012F200EB7B03 /* Tomasz Cywka.png */; };
+		80F7DA3123A012F200EB7B03 /* Jakub Moder.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1423A012F200EB7B03 /* Jakub Moder.png */; };
+		80F7DA3223A012F200EB7B03 /* Pedro Tiba.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1523A012F200EB7B03 /* Pedro Tiba.png */; };
+		80F7DA3323A012F200EB7B03 /* Tymoteusz Puchacz.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1623A012F200EB7B03 /* Tymoteusz Puchacz.png */; };
+		80F7DA3423A012F200EB7B03 /* Mickey van der Hart.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1723A012F200EB7B03 /* Mickey van der Hart.png */; };
+		80F7DA3523A012F200EB7B03 /* Filip Marchwiński.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1823A012F200EB7B03 /* Filip Marchwiński.png */; };
+		80F7DA3723A0135B00EB7B03 /* Dariusz Żuraw.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA3623A0135B00EB7B03 /* Dariusz Żuraw.png */; };
+		A7B2F3F182318037BF3A95C6 /* Pods_inzynierka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */; };
+		D123A2602246B0E200EB8AD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D123A25F2246B0E200EB8AD3 /* GoogleService-Info.plist */; };
+		D125FEFD2238F0980086B062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125FEFC2238F0980086B062 /* AppDelegate.swift */; };
+		D125FF022238F0980086B062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D125FF002238F0980086B062 /* Main.storyboard */; };
+		D125FF0A2238F09B0086B062 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D125FF082238F09B0086B062 /* LaunchScreen.storyboard */; };
+		D125FF262238F11A0086B062 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D125FF132238F10B0086B062 /* background.jpg */; };
+		D125FF2B2238F11A0086B062 /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = D125FF182238F10F0086B062 /* news.png */; };
+		D125FF2C2238F11A0086B062 /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = D125FF192238F1100086B062 /* info.png */; };
+		D125FF2D2238F11A0086B062 /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = D125FF1A2238F1120086B062 /* trophy.png */; };
+		D125FF322238F11A0086B062 /* database.png in Resources */ = {isa = PBXBuildFile; fileRef = D125FF1F2238F1160086B062 /* database.png */; };
+		D125FF332238F11A0086B062 /* LaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D125FF202238F1180086B062 /* LaunchScreen.jpg */; };
+		D125FF362238F11A0086B062 /* user_group_man_man.png in Resources */ = {isa = PBXBuildFile; fileRef = D125FF232238F1190086B062 /* user_group_man_man.png */; };
+		D142D6D222524C4E00E60E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D142D6D122524C4E00E60E69 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inzynierka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		800B711323A5125E00F590ED /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		800B711423A5125F00F590ED /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		800B711523A5126000F590ED /* FullNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullNewsViewController.swift; sourceTree = "<group>"; };
+		800B711623A5126000F590ED /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		800B711723A5126100F590ED /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		800B711823A5126200F590ED /* PlayerInfoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInfoController.swift; sourceTree = "<group>"; };
+		800B711923A5126300F590ED /* ScheduleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		800B711A23A5126400F590ED /* SquadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquadViewController.swift; sourceTree = "<group>"; };
+		800B711B23A5126500F590ED /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		800B711C23A5126600F590ED /* PickClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickClubViewController.swift; sourceTree = "<group>"; };
+		8016468E2391A4E600151A0B /* pickerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pickerImage.png; sourceTree = "<group>"; };
+		8016AD382343659300E2848A /* 809767_football-emoji-png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "809767_football-emoji-png.png"; sourceTree = "<group>"; };
+		8081EB88239557D300F974CA /* Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		80A3D44D2345E6E300A1B2A8 /* icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon120.png; sourceTree = "<group>"; };
+		80A3D44E2345E6E300A1B2A8 /* icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon180.png; sourceTree = "<group>"; };
+		80A3D4522346183600A1B2A8 /* icon87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon87.png; sourceTree = "<group>"; };
+		80A3D4532346183600A1B2A8 /* icon60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon60.png; sourceTree = "<group>"; };
+		80A3D4542346183600A1B2A8 /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
+		80A3D4552346183600A1B2A8 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
+		80A3D4562346183700A1B2A8 /* icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40.png; sourceTree = "<group>"; };
+		80A3D45F234619B700A1B2A8 /* Lech Poznań.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lech Poznań.png"; sourceTree = "<group>"; };
+		80A3D4612346238000A1B2A8 /* Legia Warszawa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Legia Warszawa.png"; sourceTree = "<group>"; };
+		80A3D4622346238000A1B2A8 /* Wisła Kraków.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wisła Kraków.png"; sourceTree = "<group>"; };
+		80A3D4632346238000A1B2A8 /* Cracovia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cracovia.png; sourceTree = "<group>"; };
+		80A3D4642346238000A1B2A8 /* Zagłębie Lubin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zagłębie Lubin.png"; sourceTree = "<group>"; };
+		80A3D4652346238100A1B2A8 /* ŁKS Łódź.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ŁKS Łódź.png"; sourceTree = "<group>"; };
+		80A3D4662346238100A1B2A8 /* Raków Częstochowa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Raków Częstochowa.png"; sourceTree = "<group>"; };
+		80A3D4672346238100A1B2A8 /* Pogoń Szczecin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pogoń Szczecin.png"; sourceTree = "<group>"; };
+		80A3D4692346238100A1B2A8 /* Piast Gliwice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Piast Gliwice.png"; sourceTree = "<group>"; };
+		80A3D46A2346238100A1B2A8 /* Korona Kielce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Korona Kielce.png"; sourceTree = "<group>"; };
+		80A3D46B2346238100A1B2A8 /* Arka Gdynia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arka Gdynia.png"; sourceTree = "<group>"; };
+		80A3D46C2346238100A1B2A8 /* Wisła Płock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wisła Płock.png"; sourceTree = "<group>"; };
+		80A3D46D2346238100A1B2A8 /* Lechia Gdańsk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lechia Gdańsk.png"; sourceTree = "<group>"; };
+		80A3D46E2346238100A1B2A8 /* Jagiellonia Białystok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jagiellonia Białystok.png"; sourceTree = "<group>"; };
+		80A3D46F2346238100A1B2A8 /* Górnik Zabrze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Górnik Zabrze.png"; sourceTree = "<group>"; };
+		80A3D47F2346256A00A1B2A8 /* Śląsk Wrocław.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Śląsk Wrocław.png"; sourceTree = "<group>"; };
+		80A3D48123462A8400A1B2A8 /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		80F54203239509D10066B833 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
+		80F5420523950BCC0066B833 /* ekstralogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ekstralogo.png; sourceTree = "<group>"; };
+		80F7D9FC23A012F000EB7B03 /* Juliusz Letniowski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Juliusz Letniowski.png"; sourceTree = "<group>"; };
+		80F7D9FD23A012F000EB7B03 /* Maciej Makuszewski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Maciej Makuszewski.png"; sourceTree = "<group>"; };
+		80F7D9FE23A012F000EB7B03 /* Volodymyr Kostevych.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Volodymyr Kostevych.png"; sourceTree = "<group>"; };
+		80F7D9FF23A012F000EB7B03 /* Miłosz Mleczko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Miłosz Mleczko.png"; sourceTree = "<group>"; };
+		80F7DA0023A012F000EB7B03 /* Tomasz Dejewski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tomasz Dejewski.png"; sourceTree = "<group>"; };
+		80F7DA0123A012F000EB7B03 /* Thomas Rogne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thomas Rogne.png"; sourceTree = "<group>"; };
+		80F7DA0223A012F000EB7B03 /* Lubomir Satka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lubomir Satka.png"; sourceTree = "<group>"; };
+		80F7DA0323A012F000EB7B03 /* Karol Szymański.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Karol Szymański.png"; sourceTree = "<group>"; };
+		80F7DA0423A012F000EB7B03 /* Jakub Kamiński.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jakub Kamiński.png"; sourceTree = "<group>"; };
+		80F7DA0523A012F100EB7B03 /* Krzysztof Bąkowski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Krzysztof Bąkowski.png"; sourceTree = "<group>"; };
+		80F7DA0623A012F100EB7B03 /* Joao Amaral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Joao Amaral.png"; sourceTree = "<group>"; };
+		80F7DA0723A012F100EB7B03 /* Kamil Jóźwiak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kamil Jóźwiak.png"; sourceTree = "<group>"; };
+		80F7DA0823A012F100EB7B03 /* Karlo Muhar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Karlo Muhar.png"; sourceTree = "<group>"; };
+		80F7DA0923A012F100EB7B03 /* Christian Gytkjaer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christian Gytkjaer.png"; sourceTree = "<group>"; };
+		80F7DA0A23A012F100EB7B03 /* Tymoteusz Klupś.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tymoteusz Klupś.png"; sourceTree = "<group>"; };
+		80F7DA0B23A012F100EB7B03 /* Timur Zhamaletdinov.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timur Zhamaletdinov.png"; sourceTree = "<group>"; };
+		80F7DA0C23A012F100EB7B03 /* Djordje Crnomarković.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Djordje Crnomarković.png"; sourceTree = "<group>"; };
+		80F7DA0D23A012F100EB7B03 /* Darko Jevtić.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Darko Jevtić.png"; sourceTree = "<group>"; };
+		80F7DA0E23A012F100EB7B03 /* Paweł Tomczyk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Paweł Tomczyk.png"; sourceTree = "<group>"; };
+		80F7DA1023A012F200EB7B03 /* Robert Gumny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Robert Gumny.png"; sourceTree = "<group>"; };
+		80F7DA1123A012F200EB7B03 /* Filip Szymczak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Filip Szymczak.png"; sourceTree = "<group>"; };
+		80F7DA1223A012F200EB7B03 /* Mateusz Skrzypczak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mateusz Skrzypczak.png"; sourceTree = "<group>"; };
+		80F7DA1323A012F200EB7B03 /* Tomasz Cywka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tomasz Cywka.png"; sourceTree = "<group>"; };
+		80F7DA1423A012F200EB7B03 /* Jakub Moder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jakub Moder.png"; sourceTree = "<group>"; };
+		80F7DA1523A012F200EB7B03 /* Pedro Tiba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pedro Tiba.png"; sourceTree = "<group>"; };
+		80F7DA1623A012F200EB7B03 /* Tymoteusz Puchacz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tymoteusz Puchacz.png"; sourceTree = "<group>"; };
+		80F7DA1723A012F200EB7B03 /* Mickey van der Hart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mickey van der Hart.png"; sourceTree = "<group>"; };
+		80F7DA1823A012F200EB7B03 /* Filip Marchwiński.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Filip Marchwiński.png"; sourceTree = "<group>"; };
+		80F7DA3623A0135B00EB7B03 /* Dariusz Żuraw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dariusz Żuraw.png"; sourceTree = "<group>"; };
+		8AA295DC4E695FEB8598C1CD /* Pods-inzynierka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inzynierka.release.xcconfig"; path = "Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka.release.xcconfig"; sourceTree = "<group>"; };
+		BE030566ECC8D996E9EDD6DA /* Pods-inzynierka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inzynierka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka.debug.xcconfig"; sourceTree = "<group>"; };
+		D123A25F2246B0E200EB8AD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D125FEF92238F0980086B062 /* inzynierka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inzynierka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D125FEFC2238F0980086B062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D125FF012238F0980086B062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D125FF092238F09B0086B062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D125FF0B2238F09B0086B062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D125FF132238F10B0086B062 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		D125FF182238F10F0086B062 /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		D125FF192238F1100086B062 /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		D125FF1A2238F1120086B062 /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
+		D125FF1F2238F1160086B062 /* database.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = database.png; sourceTree = "<group>"; };
+		D125FF202238F1180086B062 /* LaunchScreen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaunchScreen.jpg; sourceTree = "<group>"; };
+		D125FF232238F1190086B062 /* user_group_man_man.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user_group_man_man.png; sourceTree = "<group>"; };
+		D142D6D122524C4E00E60E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D125FEF62238F0980086B062 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B2F3F182318037BF3A95C6 /* Pods_inzynierka.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49D378A86BA7BA81596F284F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE030566ECC8D996E9EDD6DA /* Pods-inzynierka.debug.xcconfig */,
+				8AA295DC4E695FEB8598C1CD /* Pods-inzynierka.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C5C894B847D4509ACF918A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		800B711223A5124D00F590ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				800B711523A5126000F590ED /* FullNewsViewController.swift */,
+				800B711323A5125E00F590ED /* InfoViewController.swift */,
+				800B711723A5126100F590ED /* NewsViewController.swift */,
+				800B711C23A5126600F590ED /* PickClubViewController.swift */,
+				800B711823A5126200F590ED /* PlayerInfoController.swift */,
+				800B711923A5126300F590ED /* ScheduleViewController.swift */,
+				800B711A23A5126400F590ED /* SquadViewController.swift */,
+				800B711423A5125F00F590ED /* TabBarViewController.swift */,
+				800B711623A5126000F590ED /* TableViewCell.swift */,
+				800B711B23A5126500F590ED /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		803C7199239E6573000B8D02 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				80F7DA3623A0135B00EB7B03 /* Dariusz Żuraw.png */,
+				80F7DA0923A012F100EB7B03 /* Christian Gytkjaer.png */,
+				80F7DA0D23A012F100EB7B03 /* Darko Jevtić.png */,
+				80F7DA0C23A012F100EB7B03 /* Djordje Crnomarković.png */,
+				80F7DA1823A012F200EB7B03 /* Filip Marchwiński.png */,
+				80F7DA1123A012F200EB7B03 /* Filip Szymczak.png */,
+				80F7DA0423A012F000EB7B03 /* Jakub Kamiński.png */,
+				80F7DA1423A012F200EB7B03 /* Jakub Moder.png */,
+				80F7DA0623A012F100EB7B03 /* Joao Amaral.png */,
+				80F7D9FC23A012F000EB7B03 /* Juliusz Letniowski.png */,
+				80F7DA0723A012F100EB7B03 /* Kamil Jóźwiak.png */,
+				80F7DA0823A012F100EB7B03 /* Karlo Muhar.png */,
+				80F7DA0323A012F000EB7B03 /* Karol Szymański.png */,
+				80F7DA0523A012F100EB7B03 /* Krzysztof Bąkowski.png */,
+				80F7DA0223A012F000EB7B03 /* Lubomir Satka.png */,
+				80F7D9FD23A012F000EB7B03 /* Maciej Makuszewski.png */,
+				80F7DA1223A012F200EB7B03 /* Mateusz Skrzypczak.png */,
+				80F7DA1723A012F200EB7B03 /* Mickey van der Hart.png */,
+				80F7D9FF23A012F000EB7B03 /* Miłosz Mleczko.png */,
+				80F7DA0E23A012F100EB7B03 /* Paweł Tomczyk.png */,
+				80F7DA1523A012F200EB7B03 /* Pedro Tiba.png */,
+				80F7DA1023A012F200EB7B03 /* Robert Gumny.png */,
+				80F7DA0123A012F000EB7B03 /* Thomas Rogne.png */,
+				80F7DA0B23A012F100EB7B03 /* Timur Zhamaletdinov.png */,
+				80F7DA1323A012F200EB7B03 /* Tomasz Cywka.png */,
+				80F7DA0023A012F000EB7B03 /* Tomasz Dejewski.png */,
+				80F7DA0A23A012F100EB7B03 /* Tymoteusz Klupś.png */,
+				80F7DA1623A012F200EB7B03 /* Tymoteusz Puchacz.png */,
+				80F7D9FE23A012F000EB7B03 /* Volodymyr Kostevych.png */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		80A3D451234616AB00A1B2A8 /* Badges */ = {
+			isa = PBXGroup;
+			children = (
+				80A3D47F2346256A00A1B2A8 /* Śląsk Wrocław.png */,
+				80A3D46B2346238100A1B2A8 /* Arka Gdynia.png */,
+				80A3D4632346238000A1B2A8 /* Cracovia.png */,
+				80A3D46F2346238100A1B2A8 /* Górnik Zabrze.png */,
+				80A3D46E2346238100A1B2A8 /* Jagiellonia Białystok.png */,
+				80A3D46A2346238100A1B2A8 /* Korona Kielce.png */,
+				80A3D46D2346238100A1B2A8 /* Lechia Gdańsk.png */,
+				80A3D4612346238000A1B2A8 /* Legia Warszawa.png */,
+				80A3D4652346238100A1B2A8 /* ŁKS Łódź.png */,
+				80A3D4692346238100A1B2A8 /* Piast Gliwice.png */,
+				80A3D4672346238100A1B2A8 /* Pogoń Szczecin.png */,
+				80A3D4662346238100A1B2A8 /* Raków Częstochowa.png */,
+				80A3D4622346238000A1B2A8 /* Wisła Kraków.png */,
+				80A3D46C2346238100A1B2A8 /* Wisła Płock.png */,
+				80A3D4642346238000A1B2A8 /* Zagłębie Lubin.png */,
+				80A3D45F234619B700A1B2A8 /* Lech Poznań.png */,
+			);
+			path = Badges;
+			sourceTree = "<group>";
+		};
+		80A3D45C2346187100A1B2A8 /* App icons */ = {
+			isa = PBXGroup;
+			children = (
+				80F5420523950BCC0066B833 /* ekstralogo.png */,
+				80A3D4562346183700A1B2A8 /* icon40.png */,
+				80A3D4552346183600A1B2A8 /* icon58.png */,
+				80A3D4532346183600A1B2A8 /* icon60.png */,
+				80A3D44E2345E6E300A1B2A8 /* icon180.png */,
+				80A3D44D2345E6E300A1B2A8 /* icon120.png */,
+				80A3D4542346183600A1B2A8 /* icon80.png */,
+				8016AD382343659300E2848A /* 809767_football-emoji-png.png */,
+				80A3D4522346183600A1B2A8 /* icon87.png */,
+			);
+			path = "App icons";
+			sourceTree = "<group>";
+		};
+		80A3D45D2346189C00A1B2A8 /* Tab Bar icons */ = {
+			isa = PBXGroup;
+			children = (
+				D125FF182238F10F0086B062 /* news.png */,
+				D125FF232238F1190086B062 /* user_group_man_man.png */,
+				D125FF192238F1100086B062 /* info.png */,
+				D125FF1F2238F1160086B062 /* database.png */,
+				D125FF1A2238F1120086B062 /* trophy.png */,
+			);
+			path = "Tab Bar icons";
+			sourceTree = "<group>";
+		};
+		80A3D45E234618D400A1B2A8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8016468E2391A4E600151A0B /* pickerImage.png */,
+				D125FF202238F1180086B062 /* LaunchScreen.jpg */,
+				D125FF132238F10B0086B062 /* background.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D125FEF02238F0980086B062 = {
+			isa = PBXGroup;
+			children = (
+				D125FEFB2238F0980086B062 /* inzynierka */,
+				D125FEFA2238F0980086B062 /* Products */,
+				49D378A86BA7BA81596F284F /* Pods */,
+				4C5C894B847D4509ACF918A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D125FEFA2238F0980086B062 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D125FEF92238F0980086B062 /* inzynierka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D125FEFB2238F0980086B062 /* inzynierka */ = {
+			isa = PBXGroup;
+			children = (
+				800B711223A5124D00F590ED /* Controllers */,
+				D19A136522533DF200EC0FB1 /* Pliki .plist */,
+				D19A136022533D3600EC0FB1 /* Fotki */,
+				D125FEFC2238F0980086B062 /* AppDelegate.swift */,
+				8081EB88239557D300F974CA /* Border.swift */,
+				80A3D48123462A8400A1B2A8 /* CheckInternet.swift */,
+				80F54203239509D10066B833 /* CustomLoader.swift */,
+				D19A136622533E0700EC0FB1 /* Storyboardy */,
+			);
+			path = inzynierka;
+			sourceTree = "<group>";
+		};
+		D19A136022533D3600EC0FB1 /* Fotki */ = {
+			isa = PBXGroup;
+			children = (
+				803C7199239E6573000B8D02 /* Players */,
+				80A3D45E234618D400A1B2A8 /* Images */,
+				80A3D45D2346189C00A1B2A8 /* Tab Bar icons */,
+				80A3D45C2346187100A1B2A8 /* App icons */,
+				80A3D451234616AB00A1B2A8 /* Badges */,
+				D142D6D122524C4E00E60E69 /* Assets.xcassets */,
+			);
+			path = Fotki;
+			sourceTree = "<group>";
+		};
+		D19A136522533DF200EC0FB1 /* Pliki .plist */ = {
+			isa = PBXGroup;
+			children = (
+				D125FF0B2238F09B0086B062 /* Info.plist */,
+				D123A25F2246B0E200EB8AD3 /* GoogleService-Info.plist */,
+			);
+			path = "Pliki .plist";
+			sourceTree = "<group>";
+		};
+		D19A136622533E0700EC0FB1 /* Storyboardy */ = {
+			isa = PBXGroup;
+			children = (
+				D125FF082238F09B0086B062 /* LaunchScreen.storyboard */,
+				D125FF002238F0980086B062 /* Main.storyboard */,
+			);
+			path = Storyboardy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D125FEF82238F0980086B062 /* inzynierka */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D125FF0E2238F09B0086B062 /* Build configuration list for PBXNativeTarget "inzynierka" */;
+			buildPhases = (
+				E4638D338969C4E0CD53ACEE /* [CP] Check Pods Manifest.lock */,
+				D125FEF52238F0980086B062 /* Sources */,
+				D125FEF62238F0980086B062 /* Frameworks */,
+				D125FEF72238F0980086B062 /* Resources */,
+				0BC4584FDB1A92BBAC7973A5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = inzynierka;
+			productName = inzynierka;
+			productReference = D125FEF92238F0980086B062 /* inzynierka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D125FEF12238F0980086B062 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Sebastian Niestój";
+				TargetAttributes = {
+					D125FEF82238F0980086B062 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+				};
+			};
+			buildConfigurationList = D125FEF42238F0980086B062 /* Build configuration list for PBXProject "inzynierka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D125FEF02238F0980086B062;
+			productRefGroup = D125FEFA2238F0980086B062 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D125FEF82238F0980086B062 /* inzynierka */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D125FEF72238F0980086B062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80A3D4782346238100A1B2A8 /* Piast Gliwice.png in Resources */,
+				D125FF2B2238F11A0086B062 /* news.png in Resources */,
+				D125FF2D2238F11A0086B062 /* trophy.png in Resources */,
+				D125FF332238F11A0086B062 /* LaunchScreen.jpg in Resources */,
+				8016AD392343659300E2848A /* 809767_football-emoji-png.png in Resources */,
+				80F7DA2923A012F200EB7B03 /* Djordje Crnomarković.png in Resources */,
+				80F7DA2023A012F200EB7B03 /* Karol Szymański.png in Resources */,
+				80F7DA2D23A012F200EB7B03 /* Robert Gumny.png in Resources */,
+				80A3D47E2346238100A1B2A8 /* Górnik Zabrze.png in Resources */,
+				80A3D45A2346183700A1B2A8 /* icon58.png in Resources */,
+				D125FF2C2238F11A0086B062 /* info.png in Resources */,
+				80F7DA2A23A012F200EB7B03 /* Darko Jevtić.png in Resources */,
+				80F7DA3023A012F200EB7B03 /* Tomasz Cywka.png in Resources */,
+				80F7DA2423A012F200EB7B03 /* Kamil Jóźwiak.png in Resources */,
+				80A3D47C2346238100A1B2A8 /* Lechia Gdańsk.png in Resources */,
+				80A3D4762346238100A1B2A8 /* Pogoń Szczecin.png in Resources */,
+				80A3D47B2346238100A1B2A8 /* Wisła Płock.png in Resources */,
+				80F7DA3723A0135B00EB7B03 /* Dariusz Żuraw.png in Resources */,
+				80F7DA1C23A012F200EB7B03 /* Miłosz Mleczko.png in Resources */,
+				80F7DA1E23A012F200EB7B03 /* Thomas Rogne.png in Resources */,
+				80F7DA3523A012F200EB7B03 /* Filip Marchwiński.png in Resources */,
+				80F7DA1A23A012F200EB7B03 /* Maciej Makuszewski.png in Resources */,
+				8016468F2391A4E600151A0B /* pickerImage.png in Resources */,
+				D125FF262238F11A0086B062 /* background.jpg in Resources */,
+				80F5420623950BCC0066B833 /* ekstralogo.png in Resources */,
+				80F7DA2E23A012F200EB7B03 /* Filip Szymczak.png in Resources */,
+				80F7DA1B23A012F200EB7B03 /* Volodymyr Kostevych.png in Resources */,
+				80F7DA3323A012F200EB7B03 /* Tymoteusz Puchacz.png in Resources */,
+				80F7DA2823A012F200EB7B03 /* Timur Zhamaletdinov.png in Resources */,
+				80F7DA2F23A012F200EB7B03 /* Mateusz Skrzypczak.png in Resources */,
+				80A3D4712346238100A1B2A8 /* Wisła Kraków.png in Resources */,
+				80A3D4592346183700A1B2A8 /* icon80.png in Resources */,
+				80F7DA2623A012F200EB7B03 /* Christian Gytkjaer.png in Resources */,
+				80A3D4582346183700A1B2A8 /* icon60.png in Resources */,
+				D123A2602246B0E200EB8AD3 /* GoogleService-Info.plist in Resources */,
+				80A3D45B2346183700A1B2A8 /* icon40.png in Resources */,
+				80A3D4572346183700A1B2A8 /* icon87.png in Resources */,
+				80F7DA2523A012F200EB7B03 /* Karlo Muhar.png in Resources */,
+				80F7DA3123A012F200EB7B03 /* Jakub Moder.png in Resources */,
+				80A3D4752346238100A1B2A8 /* Raków Częstochowa.png in Resources */,
+				D125FF0A2238F09B0086B062 /* LaunchScreen.storyboard in Resources */,
+				80A3D4722346238100A1B2A8 /* Cracovia.png in Resources */,
+				D125FF362238F11A0086B062 /* user_group_man_man.png in Resources */,
+				80F7DA2123A012F200EB7B03 /* Jakub Kamiński.png in Resources */,
+				80F7DA1923A012F200EB7B03 /* Juliusz Letniowski.png in Resources */,
+				80A3D4702346238100A1B2A8 /* Legia Warszawa.png in Resources */,
+				80A3D4742346238100A1B2A8 /* ŁKS Łódź.png in Resources */,
+				D125FF022238F0980086B062 /* Main.storyboard in Resources */,
+				D142D6D222524C4E00E60E69 /* Assets.xcassets in Resources */,
+				80A3D4732346238100A1B2A8 /* Zagłębie Lubin.png in Resources */,
+				80A3D4502345E6E300A1B2A8 /* icon180.png in Resources */,
+				80F7DA2223A012F200EB7B03 /* Krzysztof Bąkowski.png in Resources */,
+				80A3D44F2345E6E300A1B2A8 /* icon120.png in Resources */,
+				80A3D4792346238100A1B2A8 /* Korona Kielce.png in Resources */,
+				80A3D47D2346238100A1B2A8 /* Jagiellonia Białystok.png in Resources */,
+				80F7DA2323A012F200EB7B03 /* Joao Amaral.png in Resources */,
+				80A3D47A2346238100A1B2A8 /* Arka Gdynia.png in Resources */,
+				80A3D460234619B700A1B2A8 /* Lech Poznań.png in Resources */,
+				80A3D4802346256A00A1B2A8 /* Śląsk Wrocław.png in Resources */,
+				80F7DA1D23A012F200EB7B03 /* Tomasz Dejewski.png in Resources */,
+				80F7DA2B23A012F200EB7B03 /* Paweł Tomczyk.png in Resources */,
+				80F7DA3223A012F200EB7B03 /* Pedro Tiba.png in Resources */,
+				80F7DA1F23A012F200EB7B03 /* Lubomir Satka.png in Resources */,
+				D125FF322238F11A0086B062 /* database.png in Resources */,
+				80F7DA3423A012F200EB7B03 /* Mickey van der Hart.png in Resources */,
+				80F7DA2723A012F200EB7B03 /* Tymoteusz Klupś.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BC4584FDB1A92BBAC7973A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4638D338969C4E0CD53ACEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-inzynierka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D125FEF52238F0980086B062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8081EB89239557D300F974CA /* Border.swift in Sources */,
+				800B712023A5126600F590ED /* TableViewCell.swift in Sources */,
+				800B712523A5126600F590ED /* TableViewController.swift in Sources */,
+				D125FEFD2238F0980086B062 /* AppDelegate.swift in Sources */,
+				80A3D48223462A8400A1B2A8 /* CheckInternet.swift in Sources */,
+				800B712623A5126600F590ED /* PickClubViewController.swift in Sources */,
+				80F54204239509D10066B833 /* CustomLoader.swift in Sources */,
+				800B711E23A5126600F590ED /* TabBarViewController.swift in Sources */,
+				800B712223A5126600F590ED /* PlayerInfoController.swift in Sources */,
+				800B712123A5126600F590ED /* NewsViewController.swift in Sources */,
+				800B711F23A5126600F590ED /* FullNewsViewController.swift in Sources */,
+				800B712423A5126600F590ED /* SquadViewController.swift in Sources */,
+				800B712323A5126600F590ED /* ScheduleViewController.swift in Sources */,
+				800B711D23A5126600F590ED /* InfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D125FF002238F0980086B062 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D125FF012238F0980086B062 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D125FF082238F09B0086B062 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D125FF092238F09B0086B062 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D125FF0C2238F09B0086B062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D125FF0D2238F09B0086B062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D125FF0F2238F09B0086B062 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE030566ECC8D996E9EDD6DA /* Pods-inzynierka.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CL2G5B84A2;
+				INFOPLIST_FILE = "$(SRCROOT)/inzynierka/Pliki .plist/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studia.inzynierka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D125FF102238F09B0086B062 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AA295DC4E695FEB8598C1CD /* Pods-inzynierka.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CL2G5B84A2;
+				INFOPLIST_FILE = "$(SRCROOT)/inzynierka/Pliki .plist/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = studia.inzynierka;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D125FEF42238F0980086B062 /* Build configuration list for PBXProject "inzynierka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D125FF0C2238F09B0086B062 /* Debug */,
+				D125FF0D2238F09B0086B062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D125FF0E2238F09B0086B062 /* Build configuration list for PBXNativeTarget "inzynierka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D125FF0F2238F09B0086B062 /* Debug */,
+				D125FF102238F09B0086B062 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D125FEF12238F0980086B062 /* Project object */;
+}
