@@ -133,7 +133,7 @@ class CustomLoader: UIView
         replicatorLayer.instanceCount = Int(dotNum)
         replicatorLayer.instanceDelay = 0.1
 
-        let angle = (2.0 * M_PI) / Double(replicatorLayer.instanceCount)
+        let angle = (2.0 * .pi) / Double(replicatorLayer.instanceCount)
 
         replicatorLayer.instanceTransform = CATransform3DMakeRotation(CGFloat(angle), 0.0, 0.0, 1.0)
 
