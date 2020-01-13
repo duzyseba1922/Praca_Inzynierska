@@ -1,5 +1,6 @@
 import UIKit
 import FirebaseDatabase
+import FirebaseStorage
 
 class TabBarViewController: UITabBarController {
     // MARK: - Database Reference
@@ -8,11 +9,8 @@ class TabBarViewController: UITabBarController {
     // MARK: - Chosen Team Property
     var team = ""
     
-    // MARK: - News Handlers
-    var refNewsHandle: DatabaseHandle?
-    
-    // MARK: - News Properties
-    var news = [[String]]()
+    // MARK: - Badge Property
+    var badge: UIImage?
     
     // MARK: - Table Handlers
     var refTableHandle: DatabaseHandle?
@@ -60,7 +58,6 @@ class TabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         ref = Database.database().reference()
-        //getNews()
         getTable()
         getSchedule()
         getSquad()
@@ -68,14 +65,6 @@ class TabBarViewController: UITabBarController {
     }
     
     // MARK: - Private Methods
-    func getNews(){
-        refNewsHandle = ref?.child("News/\(team)").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.news.append(actualPost)
-            }
-        })
-    }
     
     func getTable(){
         refTableHandle = ref?.child("Table").observe(.childAdded, with: { (snapshot) in

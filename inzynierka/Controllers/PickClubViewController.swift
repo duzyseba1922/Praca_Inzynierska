@@ -1,5 +1,6 @@
 import UIKit
 import FirebaseDatabase
+import FirebaseStorage
 
 class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
@@ -12,6 +13,8 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     var teamSelect: String? = nil
     var teams = [String]()
+    var badge: UIImage?
+    var badgesList = [UIImage]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +25,20 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         pickerView.dataSource = self
         pickerView.delegate = self
         
+        getTeams()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        if CheckInternet.Connection(){
+            if(self.pickerView.numberOfRows(inComponent: 0) == 0){
+                AppInstance.showLoader()
+            }
+        }
+        else{
+            self.Alert(Message: "Brak połączenia z Internetem.")
+        }
+    }
+    
+    func getTeams() {
         ref = Database.database().reference()
         refHandle = ref?.child("Teams").observe(.childAdded, with: { (snapshot) in
             let post = snapshot.value as? String
@@ -34,16 +51,7 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 }
             }
         })
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        if CheckInternet.Connection(){
-            if(self.pickerView.numberOfRows(inComponent: 0) == 0){
-                AppInstance.showLoader()
-            }
-        }
-        else{
-            self.Alert(Message: "Brak połączenia z Internetem.")
-        }
+        getBadge(team: "Arka Gdynia")
     }
     
     func Alert (Message: String){
@@ -57,7 +65,7 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        teamBadge.image = UIImage(named: "Arka Gdynia")
+        teamBadge.image = UIImage(named: "ekstralogo")
     }
     
    func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -76,8 +84,40 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         guard row < teams.count else {
             return
         }
+        AppInstance.showLoader()
         teamSelect = teams[row]
-        teamBadge.image = UIImage(named: "\(teamSelect!)")
+        if teamSelect == nil {
+            getBadge(team: "Arka Gdynia")
+        }
+        else {
+            getBadge(team: normalize())
+        }
+    }
+    
+    func getBadge(team: String){
+        let url = "gs://praca-inzynierska-duzego.appspot.com/badges/\(team).png"
+        Storage.storage().reference(forURL: url).getData(maxSize: 999999999999999, completion: { (data, error) in
+
+            guard let imageData = data, error == nil else {
+                return
+            }
+            self.teamBadge.image = UIImage(data: imageData)
+            AppInstance.hideLoader()
+        })
+    }
+    
+    func normalize() -> String {
+        let original = ["Ą", "ą", "Ć", "ć", "Ę", "ę", "Ł", "ł", "Ń", "ń", "Ó", "ó", "Ś", "ś", "Ź", "ź", "Ż", "ż"]
+        let normalized = ["A", "a", "C", "c", "E", "e", "L", "l", "N", "n", "O", "o", "S", "s", "Z", "z", "Z", "z"]
+        var str = teamSelect!
+        for x in 0...original.count - 1 {
+            if original.contains(where: str.contains) == true {
+                str = str.replacingOccurrences(of: original[x], with: normalized[x])
+            } else {
+                return str
+            }
+        }
+        return str
     }
     
     func selectRow(_ row: Int,inComponent component: Int,animated: Bool){
@@ -88,6 +128,7 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "name" {
             let desView = segue.destination as! TabBarViewController
+            desView.badge = teamBadge.image
             let selectedTeam = self.teamSelect
             if (selectedTeam != nil)
             {

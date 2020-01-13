@@ -41,7 +41,7 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
         if(tableView.numberOfRows(inSection: 0) != 0){
             AppInstance.hideLoader()
         }
-        imageView.image = UIImage(named: "\(tabBar.team)")
+        imageView.image = tabBar.badge
         imageView.backgroundColor = UIColor(red: 255/255, green: 224/255, blue: 178/255, alpha: 0.9)
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 30

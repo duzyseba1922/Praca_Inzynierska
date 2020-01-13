@@ -27,54 +27,9 @@
 		80A3D4592346183700A1B2A8 /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4542346183600A1B2A8 /* icon80.png */; };
 		80A3D45A2346183700A1B2A8 /* icon58.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4552346183600A1B2A8 /* icon58.png */; };
 		80A3D45B2346183700A1B2A8 /* icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4562346183700A1B2A8 /* icon40.png */; };
-		80A3D460234619B700A1B2A8 /* Lech Poznań.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D45F234619B700A1B2A8 /* Lech Poznań.png */; };
-		80A3D4702346238100A1B2A8 /* Legia Warszawa.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4612346238000A1B2A8 /* Legia Warszawa.png */; };
-		80A3D4712346238100A1B2A8 /* Wisła Kraków.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4622346238000A1B2A8 /* Wisła Kraków.png */; };
-		80A3D4722346238100A1B2A8 /* Cracovia.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4632346238000A1B2A8 /* Cracovia.png */; };
-		80A3D4732346238100A1B2A8 /* Zagłębie Lubin.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4642346238000A1B2A8 /* Zagłębie Lubin.png */; };
-		80A3D4742346238100A1B2A8 /* ŁKS Łódź.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4652346238100A1B2A8 /* ŁKS Łódź.png */; };
-		80A3D4752346238100A1B2A8 /* Raków Częstochowa.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4662346238100A1B2A8 /* Raków Częstochowa.png */; };
-		80A3D4762346238100A1B2A8 /* Pogoń Szczecin.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4672346238100A1B2A8 /* Pogoń Szczecin.png */; };
-		80A3D4782346238100A1B2A8 /* Piast Gliwice.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D4692346238100A1B2A8 /* Piast Gliwice.png */; };
-		80A3D4792346238100A1B2A8 /* Korona Kielce.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46A2346238100A1B2A8 /* Korona Kielce.png */; };
-		80A3D47A2346238100A1B2A8 /* Arka Gdynia.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46B2346238100A1B2A8 /* Arka Gdynia.png */; };
-		80A3D47B2346238100A1B2A8 /* Wisła Płock.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46C2346238100A1B2A8 /* Wisła Płock.png */; };
-		80A3D47C2346238100A1B2A8 /* Lechia Gdańsk.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46D2346238100A1B2A8 /* Lechia Gdańsk.png */; };
-		80A3D47D2346238100A1B2A8 /* Jagiellonia Białystok.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46E2346238100A1B2A8 /* Jagiellonia Białystok.png */; };
-		80A3D47E2346238100A1B2A8 /* Górnik Zabrze.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D46F2346238100A1B2A8 /* Górnik Zabrze.png */; };
-		80A3D4802346256A00A1B2A8 /* Śląsk Wrocław.png in Resources */ = {isa = PBXBuildFile; fileRef = 80A3D47F2346256A00A1B2A8 /* Śląsk Wrocław.png */; };
 		80A3D48223462A8400A1B2A8 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A3D48123462A8400A1B2A8 /* CheckInternet.swift */; };
 		80F54204239509D10066B833 /* CustomLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F54203239509D10066B833 /* CustomLoader.swift */; };
 		80F5420623950BCC0066B833 /* ekstralogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F5420523950BCC0066B833 /* ekstralogo.png */; };
-		80F7DA1923A012F200EB7B03 /* Juliusz Letniowski.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7D9FC23A012F000EB7B03 /* Juliusz Letniowski.png */; };
-		80F7DA1A23A012F200EB7B03 /* Maciej Makuszewski.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7D9FD23A012F000EB7B03 /* Maciej Makuszewski.png */; };
-		80F7DA1B23A012F200EB7B03 /* Volodymyr Kostevych.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7D9FE23A012F000EB7B03 /* Volodymyr Kostevych.png */; };
-		80F7DA1C23A012F200EB7B03 /* Miłosz Mleczko.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7D9FF23A012F000EB7B03 /* Miłosz Mleczko.png */; };
-		80F7DA1D23A012F200EB7B03 /* Tomasz Dejewski.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0023A012F000EB7B03 /* Tomasz Dejewski.png */; };
-		80F7DA1E23A012F200EB7B03 /* Thomas Rogne.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0123A012F000EB7B03 /* Thomas Rogne.png */; };
-		80F7DA1F23A012F200EB7B03 /* Lubomir Satka.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0223A012F000EB7B03 /* Lubomir Satka.png */; };
-		80F7DA2023A012F200EB7B03 /* Karol Szymański.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0323A012F000EB7B03 /* Karol Szymański.png */; };
-		80F7DA2123A012F200EB7B03 /* Jakub Kamiński.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0423A012F000EB7B03 /* Jakub Kamiński.png */; };
-		80F7DA2223A012F200EB7B03 /* Krzysztof Bąkowski.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0523A012F100EB7B03 /* Krzysztof Bąkowski.png */; };
-		80F7DA2323A012F200EB7B03 /* Joao Amaral.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0623A012F100EB7B03 /* Joao Amaral.png */; };
-		80F7DA2423A012F200EB7B03 /* Kamil Jóźwiak.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0723A012F100EB7B03 /* Kamil Jóźwiak.png */; };
-		80F7DA2523A012F200EB7B03 /* Karlo Muhar.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0823A012F100EB7B03 /* Karlo Muhar.png */; };
-		80F7DA2623A012F200EB7B03 /* Christian Gytkjaer.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0923A012F100EB7B03 /* Christian Gytkjaer.png */; };
-		80F7DA2723A012F200EB7B03 /* Tymoteusz Klupś.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0A23A012F100EB7B03 /* Tymoteusz Klupś.png */; };
-		80F7DA2823A012F200EB7B03 /* Timur Zhamaletdinov.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0B23A012F100EB7B03 /* Timur Zhamaletdinov.png */; };
-		80F7DA2923A012F200EB7B03 /* Djordje Crnomarković.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0C23A012F100EB7B03 /* Djordje Crnomarković.png */; };
-		80F7DA2A23A012F200EB7B03 /* Darko Jevtić.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0D23A012F100EB7B03 /* Darko Jevtić.png */; };
-		80F7DA2B23A012F200EB7B03 /* Paweł Tomczyk.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA0E23A012F100EB7B03 /* Paweł Tomczyk.png */; };
-		80F7DA2D23A012F200EB7B03 /* Robert Gumny.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1023A012F200EB7B03 /* Robert Gumny.png */; };
-		80F7DA2E23A012F200EB7B03 /* Filip Szymczak.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1123A012F200EB7B03 /* Filip Szymczak.png */; };
-		80F7DA2F23A012F200EB7B03 /* Mateusz Skrzypczak.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1223A012F200EB7B03 /* Mateusz Skrzypczak.png */; };
-		80F7DA3023A012F200EB7B03 /* Tomasz Cywka.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1323A012F200EB7B03 /* Tomasz Cywka.png */; };
-		80F7DA3123A012F200EB7B03 /* Jakub Moder.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1423A012F200EB7B03 /* Jakub Moder.png */; };
-		80F7DA3223A012F200EB7B03 /* Pedro Tiba.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1523A012F200EB7B03 /* Pedro Tiba.png */; };
-		80F7DA3323A012F200EB7B03 /* Tymoteusz Puchacz.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1623A012F200EB7B03 /* Tymoteusz Puchacz.png */; };
-		80F7DA3423A012F200EB7B03 /* Mickey van der Hart.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1723A012F200EB7B03 /* Mickey van der Hart.png */; };
-		80F7DA3523A012F200EB7B03 /* Filip Marchwiński.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA1823A012F200EB7B03 /* Filip Marchwiński.png */; };
-		80F7DA3723A0135B00EB7B03 /* Dariusz Żuraw.png in Resources */ = {isa = PBXBuildFile; fileRef = 80F7DA3623A0135B00EB7B03 /* Dariusz Żuraw.png */; };
 		A7B2F3F182318037BF3A95C6 /* Pods_inzynierka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */; };
 		D123A2602246B0E200EB8AD3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D123A25F2246B0E200EB8AD3 /* GoogleService-Info.plist */; };
 		D125FEFD2238F0980086B062 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D125FEFC2238F0980086B062 /* AppDelegate.swift */; };
@@ -112,54 +67,9 @@
 		80A3D4542346183600A1B2A8 /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
 		80A3D4552346183600A1B2A8 /* icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon58.png; sourceTree = "<group>"; };
 		80A3D4562346183700A1B2A8 /* icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon40.png; sourceTree = "<group>"; };
-		80A3D45F234619B700A1B2A8 /* Lech Poznań.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lech Poznań.png"; sourceTree = "<group>"; };
-		80A3D4612346238000A1B2A8 /* Legia Warszawa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Legia Warszawa.png"; sourceTree = "<group>"; };
-		80A3D4622346238000A1B2A8 /* Wisła Kraków.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wisła Kraków.png"; sourceTree = "<group>"; };
-		80A3D4632346238000A1B2A8 /* Cracovia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cracovia.png; sourceTree = "<group>"; };
-		80A3D4642346238000A1B2A8 /* Zagłębie Lubin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zagłębie Lubin.png"; sourceTree = "<group>"; };
-		80A3D4652346238100A1B2A8 /* ŁKS Łódź.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ŁKS Łódź.png"; sourceTree = "<group>"; };
-		80A3D4662346238100A1B2A8 /* Raków Częstochowa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Raków Częstochowa.png"; sourceTree = "<group>"; };
-		80A3D4672346238100A1B2A8 /* Pogoń Szczecin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pogoń Szczecin.png"; sourceTree = "<group>"; };
-		80A3D4692346238100A1B2A8 /* Piast Gliwice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Piast Gliwice.png"; sourceTree = "<group>"; };
-		80A3D46A2346238100A1B2A8 /* Korona Kielce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Korona Kielce.png"; sourceTree = "<group>"; };
-		80A3D46B2346238100A1B2A8 /* Arka Gdynia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arka Gdynia.png"; sourceTree = "<group>"; };
-		80A3D46C2346238100A1B2A8 /* Wisła Płock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wisła Płock.png"; sourceTree = "<group>"; };
-		80A3D46D2346238100A1B2A8 /* Lechia Gdańsk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lechia Gdańsk.png"; sourceTree = "<group>"; };
-		80A3D46E2346238100A1B2A8 /* Jagiellonia Białystok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jagiellonia Białystok.png"; sourceTree = "<group>"; };
-		80A3D46F2346238100A1B2A8 /* Górnik Zabrze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Górnik Zabrze.png"; sourceTree = "<group>"; };
-		80A3D47F2346256A00A1B2A8 /* Śląsk Wrocław.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Śląsk Wrocław.png"; sourceTree = "<group>"; };
 		80A3D48123462A8400A1B2A8 /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
 		80F54203239509D10066B833 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
 		80F5420523950BCC0066B833 /* ekstralogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ekstralogo.png; sourceTree = "<group>"; };
-		80F7D9FC23A012F000EB7B03 /* Juliusz Letniowski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Juliusz Letniowski.png"; sourceTree = "<group>"; };
-		80F7D9FD23A012F000EB7B03 /* Maciej Makuszewski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Maciej Makuszewski.png"; sourceTree = "<group>"; };
-		80F7D9FE23A012F000EB7B03 /* Volodymyr Kostevych.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Volodymyr Kostevych.png"; sourceTree = "<group>"; };
-		80F7D9FF23A012F000EB7B03 /* Miłosz Mleczko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Miłosz Mleczko.png"; sourceTree = "<group>"; };
-		80F7DA0023A012F000EB7B03 /* Tomasz Dejewski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tomasz Dejewski.png"; sourceTree = "<group>"; };
-		80F7DA0123A012F000EB7B03 /* Thomas Rogne.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Thomas Rogne.png"; sourceTree = "<group>"; };
-		80F7DA0223A012F000EB7B03 /* Lubomir Satka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lubomir Satka.png"; sourceTree = "<group>"; };
-		80F7DA0323A012F000EB7B03 /* Karol Szymański.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Karol Szymański.png"; sourceTree = "<group>"; };
-		80F7DA0423A012F000EB7B03 /* Jakub Kamiński.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jakub Kamiński.png"; sourceTree = "<group>"; };
-		80F7DA0523A012F100EB7B03 /* Krzysztof Bąkowski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Krzysztof Bąkowski.png"; sourceTree = "<group>"; };
-		80F7DA0623A012F100EB7B03 /* Joao Amaral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Joao Amaral.png"; sourceTree = "<group>"; };
-		80F7DA0723A012F100EB7B03 /* Kamil Jóźwiak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kamil Jóźwiak.png"; sourceTree = "<group>"; };
-		80F7DA0823A012F100EB7B03 /* Karlo Muhar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Karlo Muhar.png"; sourceTree = "<group>"; };
-		80F7DA0923A012F100EB7B03 /* Christian Gytkjaer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Christian Gytkjaer.png"; sourceTree = "<group>"; };
-		80F7DA0A23A012F100EB7B03 /* Tymoteusz Klupś.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tymoteusz Klupś.png"; sourceTree = "<group>"; };
-		80F7DA0B23A012F100EB7B03 /* Timur Zhamaletdinov.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Timur Zhamaletdinov.png"; sourceTree = "<group>"; };
-		80F7DA0C23A012F100EB7B03 /* Djordje Crnomarković.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Djordje Crnomarković.png"; sourceTree = "<group>"; };
-		80F7DA0D23A012F100EB7B03 /* Darko Jevtić.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Darko Jevtić.png"; sourceTree = "<group>"; };
-		80F7DA0E23A012F100EB7B03 /* Paweł Tomczyk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Paweł Tomczyk.png"; sourceTree = "<group>"; };
-		80F7DA1023A012F200EB7B03 /* Robert Gumny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Robert Gumny.png"; sourceTree = "<group>"; };
-		80F7DA1123A012F200EB7B03 /* Filip Szymczak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Filip Szymczak.png"; sourceTree = "<group>"; };
-		80F7DA1223A012F200EB7B03 /* Mateusz Skrzypczak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mateusz Skrzypczak.png"; sourceTree = "<group>"; };
-		80F7DA1323A012F200EB7B03 /* Tomasz Cywka.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tomasz Cywka.png"; sourceTree = "<group>"; };
-		80F7DA1423A012F200EB7B03 /* Jakub Moder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jakub Moder.png"; sourceTree = "<group>"; };
-		80F7DA1523A012F200EB7B03 /* Pedro Tiba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pedro Tiba.png"; sourceTree = "<group>"; };
-		80F7DA1623A012F200EB7B03 /* Tymoteusz Puchacz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tymoteusz Puchacz.png"; sourceTree = "<group>"; };
-		80F7DA1723A012F200EB7B03 /* Mickey van der Hart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mickey van der Hart.png"; sourceTree = "<group>"; };
-		80F7DA1823A012F200EB7B03 /* Filip Marchwiński.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Filip Marchwiński.png"; sourceTree = "<group>"; };
-		80F7DA3623A0135B00EB7B03 /* Dariusz Żuraw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dariusz Żuraw.png"; sourceTree = "<group>"; };
 		8AA295DC4E695FEB8598C1CD /* Pods-inzynierka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inzynierka.release.xcconfig"; path = "Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka.release.xcconfig"; sourceTree = "<group>"; };
 		BE030566ECC8D996E9EDD6DA /* Pods-inzynierka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inzynierka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka.debug.xcconfig"; sourceTree = "<group>"; };
 		D123A25F2246B0E200EB8AD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -210,77 +120,18 @@
 		800B711223A5124D00F590ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				800B711523A5126000F590ED /* FullNewsViewController.swift */,
-				800B711323A5125E00F590ED /* InfoViewController.swift */,
-				800B711723A5126100F590ED /* NewsViewController.swift */,
 				800B711C23A5126600F590ED /* PickClubViewController.swift */,
-				800B711823A5126200F590ED /* PlayerInfoController.swift */,
+				800B711423A5125F00F590ED /* TabBarViewController.swift */,
+				800B711723A5126100F590ED /* NewsViewController.swift */,
+				800B711523A5126000F590ED /* FullNewsViewController.swift */,
+				800B711B23A5126500F590ED /* TableViewController.swift */,
+				800B711623A5126000F590ED /* TableViewCell.swift */,
 				800B711923A5126300F590ED /* ScheduleViewController.swift */,
 				800B711A23A5126400F590ED /* SquadViewController.swift */,
-				800B711423A5125F00F590ED /* TabBarViewController.swift */,
-				800B711623A5126000F590ED /* TableViewCell.swift */,
-				800B711B23A5126500F590ED /* TableViewController.swift */,
+				800B711823A5126200F590ED /* PlayerInfoController.swift */,
+				800B711323A5125E00F590ED /* InfoViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		803C7199239E6573000B8D02 /* Players */ = {
-			isa = PBXGroup;
-			children = (
-				80F7DA3623A0135B00EB7B03 /* Dariusz Żuraw.png */,
-				80F7DA0923A012F100EB7B03 /* Christian Gytkjaer.png */,
-				80F7DA0D23A012F100EB7B03 /* Darko Jevtić.png */,
-				80F7DA0C23A012F100EB7B03 /* Djordje Crnomarković.png */,
-				80F7DA1823A012F200EB7B03 /* Filip Marchwiński.png */,
-				80F7DA1123A012F200EB7B03 /* Filip Szymczak.png */,
-				80F7DA0423A012F000EB7B03 /* Jakub Kamiński.png */,
-				80F7DA1423A012F200EB7B03 /* Jakub Moder.png */,
-				80F7DA0623A012F100EB7B03 /* Joao Amaral.png */,
-				80F7D9FC23A012F000EB7B03 /* Juliusz Letniowski.png */,
-				80F7DA0723A012F100EB7B03 /* Kamil Jóźwiak.png */,
-				80F7DA0823A012F100EB7B03 /* Karlo Muhar.png */,
-				80F7DA0323A012F000EB7B03 /* Karol Szymański.png */,
-				80F7DA0523A012F100EB7B03 /* Krzysztof Bąkowski.png */,
-				80F7DA0223A012F000EB7B03 /* Lubomir Satka.png */,
-				80F7D9FD23A012F000EB7B03 /* Maciej Makuszewski.png */,
-				80F7DA1223A012F200EB7B03 /* Mateusz Skrzypczak.png */,
-				80F7DA1723A012F200EB7B03 /* Mickey van der Hart.png */,
-				80F7D9FF23A012F000EB7B03 /* Miłosz Mleczko.png */,
-				80F7DA0E23A012F100EB7B03 /* Paweł Tomczyk.png */,
-				80F7DA1523A012F200EB7B03 /* Pedro Tiba.png */,
-				80F7DA1023A012F200EB7B03 /* Robert Gumny.png */,
-				80F7DA0123A012F000EB7B03 /* Thomas Rogne.png */,
-				80F7DA0B23A012F100EB7B03 /* Timur Zhamaletdinov.png */,
-				80F7DA1323A012F200EB7B03 /* Tomasz Cywka.png */,
-				80F7DA0023A012F000EB7B03 /* Tomasz Dejewski.png */,
-				80F7DA0A23A012F100EB7B03 /* Tymoteusz Klupś.png */,
-				80F7DA1623A012F200EB7B03 /* Tymoteusz Puchacz.png */,
-				80F7D9FE23A012F000EB7B03 /* Volodymyr Kostevych.png */,
-			);
-			path = Players;
-			sourceTree = "<group>";
-		};
-		80A3D451234616AB00A1B2A8 /* Badges */ = {
-			isa = PBXGroup;
-			children = (
-				80A3D47F2346256A00A1B2A8 /* Śląsk Wrocław.png */,
-				80A3D46B2346238100A1B2A8 /* Arka Gdynia.png */,
-				80A3D4632346238000A1B2A8 /* Cracovia.png */,
-				80A3D46F2346238100A1B2A8 /* Górnik Zabrze.png */,
-				80A3D46E2346238100A1B2A8 /* Jagiellonia Białystok.png */,
-				80A3D46A2346238100A1B2A8 /* Korona Kielce.png */,
-				80A3D46D2346238100A1B2A8 /* Lechia Gdańsk.png */,
-				80A3D4612346238000A1B2A8 /* Legia Warszawa.png */,
-				80A3D4652346238100A1B2A8 /* ŁKS Łódź.png */,
-				80A3D4692346238100A1B2A8 /* Piast Gliwice.png */,
-				80A3D4672346238100A1B2A8 /* Pogoń Szczecin.png */,
-				80A3D4662346238100A1B2A8 /* Raków Częstochowa.png */,
-				80A3D4622346238000A1B2A8 /* Wisła Kraków.png */,
-				80A3D46C2346238100A1B2A8 /* Wisła Płock.png */,
-				80A3D4642346238000A1B2A8 /* Zagłębie Lubin.png */,
-				80A3D45F234619B700A1B2A8 /* Lech Poznań.png */,
-			);
-			path = Badges;
 			sourceTree = "<group>";
 		};
 		80A3D45C2346187100A1B2A8 /* App icons */ = {
@@ -357,11 +208,9 @@
 		D19A136022533D3600EC0FB1 /* Fotki */ = {
 			isa = PBXGroup;
 			children = (
-				803C7199239E6573000B8D02 /* Players */,
 				80A3D45E234618D400A1B2A8 /* Images */,
 				80A3D45D2346189C00A1B2A8 /* Tab Bar icons */,
 				80A3D45C2346187100A1B2A8 /* App icons */,
-				80A3D451234616AB00A1B2A8 /* Badges */,
 				D142D6D122524C4E00E60E69 /* Assets.xcassets */,
 			);
 			path = Fotki;
@@ -446,72 +295,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A3D4782346238100A1B2A8 /* Piast Gliwice.png in Resources */,
 				D125FF2B2238F11A0086B062 /* news.png in Resources */,
 				D125FF2D2238F11A0086B062 /* trophy.png in Resources */,
 				D125FF332238F11A0086B062 /* LaunchScreen.jpg in Resources */,
 				8016AD392343659300E2848A /* 809767_football-emoji-png.png in Resources */,
-				80F7DA2923A012F200EB7B03 /* Djordje Crnomarković.png in Resources */,
-				80F7DA2023A012F200EB7B03 /* Karol Szymański.png in Resources */,
-				80F7DA2D23A012F200EB7B03 /* Robert Gumny.png in Resources */,
-				80A3D47E2346238100A1B2A8 /* Górnik Zabrze.png in Resources */,
 				80A3D45A2346183700A1B2A8 /* icon58.png in Resources */,
 				D125FF2C2238F11A0086B062 /* info.png in Resources */,
-				80F7DA2A23A012F200EB7B03 /* Darko Jevtić.png in Resources */,
-				80F7DA3023A012F200EB7B03 /* Tomasz Cywka.png in Resources */,
-				80F7DA2423A012F200EB7B03 /* Kamil Jóźwiak.png in Resources */,
-				80A3D47C2346238100A1B2A8 /* Lechia Gdańsk.png in Resources */,
-				80A3D4762346238100A1B2A8 /* Pogoń Szczecin.png in Resources */,
-				80A3D47B2346238100A1B2A8 /* Wisła Płock.png in Resources */,
-				80F7DA3723A0135B00EB7B03 /* Dariusz Żuraw.png in Resources */,
-				80F7DA1C23A012F200EB7B03 /* Miłosz Mleczko.png in Resources */,
-				80F7DA1E23A012F200EB7B03 /* Thomas Rogne.png in Resources */,
-				80F7DA3523A012F200EB7B03 /* Filip Marchwiński.png in Resources */,
-				80F7DA1A23A012F200EB7B03 /* Maciej Makuszewski.png in Resources */,
 				8016468F2391A4E600151A0B /* pickerImage.png in Resources */,
 				D125FF262238F11A0086B062 /* background.jpg in Resources */,
 				80F5420623950BCC0066B833 /* ekstralogo.png in Resources */,
-				80F7DA2E23A012F200EB7B03 /* Filip Szymczak.png in Resources */,
-				80F7DA1B23A012F200EB7B03 /* Volodymyr Kostevych.png in Resources */,
-				80F7DA3323A012F200EB7B03 /* Tymoteusz Puchacz.png in Resources */,
-				80F7DA2823A012F200EB7B03 /* Timur Zhamaletdinov.png in Resources */,
-				80F7DA2F23A012F200EB7B03 /* Mateusz Skrzypczak.png in Resources */,
-				80A3D4712346238100A1B2A8 /* Wisła Kraków.png in Resources */,
 				80A3D4592346183700A1B2A8 /* icon80.png in Resources */,
-				80F7DA2623A012F200EB7B03 /* Christian Gytkjaer.png in Resources */,
 				80A3D4582346183700A1B2A8 /* icon60.png in Resources */,
 				D123A2602246B0E200EB8AD3 /* GoogleService-Info.plist in Resources */,
 				80A3D45B2346183700A1B2A8 /* icon40.png in Resources */,
 				80A3D4572346183700A1B2A8 /* icon87.png in Resources */,
-				80F7DA2523A012F200EB7B03 /* Karlo Muhar.png in Resources */,
-				80F7DA3123A012F200EB7B03 /* Jakub Moder.png in Resources */,
-				80A3D4752346238100A1B2A8 /* Raków Częstochowa.png in Resources */,
 				D125FF0A2238F09B0086B062 /* LaunchScreen.storyboard in Resources */,
-				80A3D4722346238100A1B2A8 /* Cracovia.png in Resources */,
 				D125FF362238F11A0086B062 /* user_group_man_man.png in Resources */,
-				80F7DA2123A012F200EB7B03 /* Jakub Kamiński.png in Resources */,
-				80F7DA1923A012F200EB7B03 /* Juliusz Letniowski.png in Resources */,
-				80A3D4702346238100A1B2A8 /* Legia Warszawa.png in Resources */,
-				80A3D4742346238100A1B2A8 /* ŁKS Łódź.png in Resources */,
 				D125FF022238F0980086B062 /* Main.storyboard in Resources */,
 				D142D6D222524C4E00E60E69 /* Assets.xcassets in Resources */,
-				80A3D4732346238100A1B2A8 /* Zagłębie Lubin.png in Resources */,
 				80A3D4502345E6E300A1B2A8 /* icon180.png in Resources */,
-				80F7DA2223A012F200EB7B03 /* Krzysztof Bąkowski.png in Resources */,
 				80A3D44F2345E6E300A1B2A8 /* icon120.png in Resources */,
-				80A3D4792346238100A1B2A8 /* Korona Kielce.png in Resources */,
-				80A3D47D2346238100A1B2A8 /* Jagiellonia Białystok.png in Resources */,
-				80F7DA2323A012F200EB7B03 /* Joao Amaral.png in Resources */,
-				80A3D47A2346238100A1B2A8 /* Arka Gdynia.png in Resources */,
-				80A3D460234619B700A1B2A8 /* Lech Poznań.png in Resources */,
-				80A3D4802346256A00A1B2A8 /* Śląsk Wrocław.png in Resources */,
-				80F7DA1D23A012F200EB7B03 /* Tomasz Dejewski.png in Resources */,
-				80F7DA2B23A012F200EB7B03 /* Paweł Tomczyk.png in Resources */,
-				80F7DA3223A012F200EB7B03 /* Pedro Tiba.png in Resources */,
-				80F7DA1F23A012F200EB7B03 /* Lubomir Satka.png in Resources */,
 				D125FF322238F11A0086B062 /* database.png in Resources */,
-				80F7DA3423A012F200EB7B03 /* Mickey van der Hart.png in Resources */,
-				80F7DA2723A012F200EB7B03 /* Tymoteusz Klupś.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

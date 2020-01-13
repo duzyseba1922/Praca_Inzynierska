@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseStorage
 
 class PlayerInfoController: UIViewController {
     
@@ -26,7 +27,15 @@ class PlayerInfoController: UIViewController {
         contentView.layer.masksToBounds = true
         contentView.layer.cornerRadius = 10
         
-        playerImage.image = UIImage(named: "\(name)")
+        let url = "gs://praca-inzynierska-duzego.appspot.com/players/\(team)/\(normalize()).png"
+        Storage.storage().reference(forURL: url).getData(maxSize: 999999999999999, completion: { (data, error) in
+
+            guard let imageData = data, error == nil else {
+                return
+            }
+            self.playerImage.image = UIImage(data: imageData)
+
+        })
         playerImage.layer.masksToBounds = true
         playerImage.layer.cornerRadius = 10
         
@@ -62,4 +71,17 @@ class PlayerInfoController: UIViewController {
         
     }
 
+    func normalize() -> String {
+        let original = ["Ą", "ą", "Ć", "ć", "Ę", "ę", "Ł", "ł", "Ń", "ń", "Ó", "ó", "Ś", "ś", "Ź", "ź", "Ż", "ż"]
+        let normalized = ["A", "a", "C", "c", "E", "e", "L", "l", "N", "n", "O", "o", "S", "s", "Z", "z", "Z", "z"]
+        var str = name
+        for x in 0...original.count - 1 {
+            if original.contains(where: str.contains) == true {
+                str = str.replacingOccurrences(of: original[x], with: normalized[x])
+            } else {
+                return str
+            }
+        }
+        return str
+    }
 }

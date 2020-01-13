@@ -1,6 +1,7 @@
 import UIKit
 import FirebaseDatabase
 import MarqueeLabel
+import FirebaseStorage
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -47,7 +48,15 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.layer.masksToBounds = true
         tableView.layer.cornerRadius = 10
         
-        imageView.image = UIImage(named: "\(tabBar.team)")
+        let url = "gs://praca-inzynierska-duzego.appspot.com/badges/\(normalize()).png"
+        Storage.storage().reference(forURL: url).getData(maxSize: 999999999999999, completion: { (data, error) in
+
+            guard let imageData = data, error == nil else {
+                return
+            }
+            self.imageView.image = UIImage(data: imageData)
+        })
+        
         imageView.backgroundColor = UIColor(red: 255/255, green: 224/255, blue: 178/255, alpha: 0.9)
         imageView.layer.masksToBounds = true
         imageView.layer.cornerRadius = 30
@@ -71,6 +80,21 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
             }
         })
+    }
+    
+    func normalize() -> String {
+        let tabBar = tabBarController as! TabBarViewController
+        let original = ["Ą", "ą", "Ć", "ć", "Ę", "ę", "Ł", "ł", "Ń", "ń", "Ó", "ó", "Ś", "ś", "Ź", "ź", "Ż", "ż"]
+        let normalized = ["A", "a", "C", "c", "E", "e", "L", "l", "N", "n", "O", "o", "S", "s", "Z", "z", "Z", "z"]
+        var str = tabBar.team
+        for x in 0...original.count - 1 {
+            if original.contains(where: str.contains) == true {
+                str = str.replacingOccurrences(of: original[x], with: normalized[x])
+            } else {
+                return str
+            }
+        }
+        return str
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
