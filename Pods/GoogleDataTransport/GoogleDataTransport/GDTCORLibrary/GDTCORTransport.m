@@ -25,9 +25,10 @@
 
 @implementation GDTCORTransport
 
-- (instancetype)initWithMappingID:(NSString *)mappingID
-                     transformers:(nullable NSArray<id<GDTCOREventTransformer>> *)transformers
-                           target:(NSInteger)target {
+- (nullable instancetype)initWithMappingID:(NSString *)mappingID
+                              transformers:
+                                  (nullable NSArray<id<GDTCOREventTransformer>> *)transformers
+                                    target:(NSInteger)target {
   GDTCORAssert(mappingID.length > 0, @"A mapping ID cannot be nil or empty");
   GDTCORAssert(target > 0, @"A target cannot be negative or 0");
   if (mappingID == nil || mappingID.length == 0 || target <= 0) {
@@ -40,6 +41,8 @@
     _target = target;
     _transformerInstance = [GDTCORTransformer sharedInstance];
   }
+  GDTCORLogDebug("Transport object created. mappingID:%@ transformers:%@ target:%ld", _mappingID,
+                 _transformers, (long)_target);
   return self;
 }
 
@@ -50,6 +53,7 @@
   copiedEvent.qosTier = GDTCOREventQoSTelemetry;
   copiedEvent.clockSnapshot = [GDTCORClock snapshot];
   [self.transformerInstance transformEvent:copiedEvent withTransformers:_transformers];
+  GDTCORLogDebug("Telemetry event sent: %@", event);
 }
 
 - (void)sendDataEvent:(GDTCOREvent *)event {
@@ -59,6 +63,7 @@
   GDTCOREvent *copiedEvent = [event copy];
   copiedEvent.clockSnapshot = [GDTCORClock snapshot];
   [self.transformerInstance transformEvent:copiedEvent withTransformers:_transformers];
+  GDTCORLogDebug("Data event sent: %@", event);
 }
 
 - (GDTCOREvent *)eventForTransport {

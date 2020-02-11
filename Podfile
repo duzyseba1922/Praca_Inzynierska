@@ -9,5 +9,6 @@ target 'inzynierka' do
   pod 'Firebase/Core'
   pod 'Firebase/Storage'
   pod 'MarqueeLabel'
-
+  pod 'SwiftyJSON', '~> 4.0'
+  
 end

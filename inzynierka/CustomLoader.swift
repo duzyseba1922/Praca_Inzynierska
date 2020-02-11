@@ -193,7 +193,7 @@ class CustomLoader: UIView
                 if viw.accessibilityIdentifier == "CustomLoader"
                 {
                     viw.removeFromSuperview()
-                    //  break
+//                      break
                 }
             }
         }

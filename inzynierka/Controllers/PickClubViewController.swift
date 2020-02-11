@@ -1,16 +1,17 @@
 import UIKit
-import FirebaseDatabase
-import FirebaseStorage
+import Firebase
 
 class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var teamBadge: UIImageView!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     var ref: DatabaseReference?
     var refHandle: DatabaseHandle?
     
+    var chosenOption: String = ""
     var teamSelect: String? = nil
     var teams = [String]()
     var badge: UIImage?
@@ -22,11 +23,29 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 10
         
+        backButton.layer.masksToBounds = true
+        backButton.layer.cornerRadius = 10
+        
+        if chosenOption == "user" {
+            backButton.setTitle("Powrót",for: .normal)
+        } else if chosenOption == "admin" {
+            backButton.setTitle("Wyloguj się",for: .normal)
+        }
+        
         pickerView.dataSource = self
         pickerView.delegate = self
         
         getTeams()
     }
+    
+    @IBAction func backButton(_ sender: Any) {
+        if backButton.titleLabel?.text == "Powrót" {
+            self.dismiss(animated: true, completion: nil)
+        } else if backButton.titleLabel?.text == "Wyloguj się" {
+            logOutAlert()
+        }
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         if CheckInternet.Connection(){
             if(self.pickerView.numberOfRows(inComponent: 0) == 0){
@@ -35,6 +54,14 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
         else{
             self.Alert(Message: "Brak połączenia z Internetem.")
+        }
+    }
+    
+    @IBAction func button(_ sender: Any) {
+        if chosenOption == "user" {
+            performSegue(withIdentifier: "name", sender: self)
+        } else if chosenOption == "admin" {
+            performSegue(withIdentifier: "manager", sender: self)
         }
     }
     
@@ -54,13 +81,25 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         getBadge(team: "Arka Gdynia")
     }
     
-    func Alert (Message: String){
+    func Alert(Message: String) {
         let alert = UIAlertController(title: "Wystąpił błąd", message: Message, preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Spróbuj ponownie", style: UIAlertAction.Style.default) {
             UIAlertAction in
                 UIApplication.shared.keyWindow?.rootViewController = self.storyboard!.instantiateViewController(withIdentifier: "Picker")
             AppInstance.hideLoader()
         })
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func logOutAlert() {
+        let alert = UIAlertController(title: "Czy na pewno chcesz się wylogować?", message: nil, preferredStyle: UIAlertController.Style.alert)
+        let confirmAction = UIAlertAction(title: "Tak", style: UIAlertAction.Style.destructive) {
+            UIAlertAction in
+            self.dismiss(animated: true, completion: nil)
+        }
+        let cancelAction = UIAlertAction(title: "Nie", style: UIAlertAction.Style.cancel)
+        alert.addAction(confirmAction)
+        alert.addAction(cancelAction)
         self.present(alert, animated: true, completion: nil)
     }
     
@@ -122,21 +161,25 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     
     func selectRow(_ row: Int,inComponent component: Int,animated: Bool){
         self.teamSelect = teams[row]
-        performSegue(withIdentifier: "name", sender: self)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let selectedTeam = self.teamSelect
         if segue.identifier == "name" {
             let desView = segue.destination as! TabBarViewController
             desView.badge = teamBadge.image
-            let selectedTeam = self.teamSelect
-            if (selectedTeam != nil)
-            {
+            if (selectedTeam != nil) {
                 desView.team = selectedTeam!
+            } else {
+                desView.team = teams[0]
             }
-            else
-            {
-                desView.team = "Arka Gdynia"
+        } else if segue.identifier == "manager" {
+            let vc = segue.destination as! DatabaseManagerController
+            vc.badge = teamBadge.image
+            if (selectedTeam != nil) {
+                vc.team = selectedTeam!
+            } else {
+                vc.team = teams[0]
             }
         }
     }
