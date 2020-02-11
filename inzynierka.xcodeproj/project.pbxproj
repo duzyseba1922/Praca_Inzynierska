@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		788328E1AAC8D12DB23B66E3 /* Pods_inzynierka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2BC2159A41798FB28FA5D1 /* Pods_inzynierka.framework */; };
 		800B711D23A5126600F590ED /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711323A5125E00F590ED /* InfoViewController.swift */; };
 		800B711E23A5126600F590ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711423A5125F00F590ED /* TabBarViewController.swift */; };
 		800B711F23A5126600F590ED /* FullNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711523A5126000F590ED /* FullNewsViewController.swift */; };
@@ -56,6 +55,7 @@
 		D1E5989A23E198DC00358502 /* TeamManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5989923E198DC00358502 /* TeamManagerController.swift */; };
 		D1E5989C23E1A80D00358502 /* RecordsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5989B23E1A80D00358502 /* RecordsListController.swift */; };
 		D1FD589423E0405100F6FADC /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD589323E0405100F6FADC /* InitialViewController.swift */; };
+		D58D76D040B56A833EE27745 /* libPods-inzynierka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10583CF0E2A7FEEBDFBC3DE8 /* libPods-inzynierka.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +83,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		10583CF0E2A7FEEBDFBC3DE8 /* libPods-inzynierka.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-inzynierka.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inzynierka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		800B711323A5125E00F590ED /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		800B711423A5125F00F590ED /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -134,7 +135,6 @@
 		D1E5989923E198DC00358502 /* TeamManagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManagerController.swift; sourceTree = "<group>"; };
 		D1E5989B23E1A80D00358502 /* RecordsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsListController.swift; sourceTree = "<group>"; };
 		D1FD589323E0405100F6FADC /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		FE2BC2159A41798FB28FA5D1 /* Pods_inzynierka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inzynierka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				788328E1AAC8D12DB23B66E3 /* Pods_inzynierka.framework in Frameworks */,
+				D58D76D040B56A833EE27745 /* libPods-inzynierka.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +161,7 @@
 		4C5C894B847D4509ACF918A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FE2BC2159A41798FB28FA5D1 /* Pods_inzynierka.framework */,
+				10583CF0E2A7FEEBDFBC3DE8 /* libPods-inzynierka.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -323,7 +323,6 @@
 				D125FEF62238F0980086B062 /* Frameworks */,
 				D125FEF72238F0980086B062 /* Resources */,
 				D1C9173123E821B400C4567F /* Embed Frameworks */,
-				7096F523B28EA6E4F7497195 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -400,36 +399,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7096F523B28EA6E4F7497195 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E4638D338969C4E0CD53ACEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
