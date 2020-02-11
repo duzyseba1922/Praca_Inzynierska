@@ -24,18 +24,10 @@ class TabBarViewController: UITabBarController {
     var schedule = [[String]]()
     
     // MARK: - Squad Handlers
-    var refCoachHandle: DatabaseHandle?
-    var refGoalkeeperHandle: DatabaseHandle?
-    var refDefenderHandle: DatabaseHandle?
-    var refMidfielderHandle: DatabaseHandle?
-    var refStrikerHandle: DatabaseHandle?
+    var refSquadHandle: DatabaseHandle?
     
     // MARK: - Squad Properties
-    var coach = [[String]]()
-    var goalkeeper = [[String]]()
-    var defender = [[String]]()
-    var midfielder = [[String]]()
-    var striker = [[String]]()
+    var squad = [[String]]()
     
     // MARK: - Info Handlers
     var refFoundedHandle: DatabaseHandle?
@@ -88,34 +80,10 @@ class TabBarViewController: UITabBarController {
     }
     
     func getSquad(){
-        refCoachHandle = ref?.child("Squad/\(team)/Trener").observe(.childAdded, with: { (snapshot) in
+        refSquadHandle = ref?.child("Squad/\(team)").observe(.childAdded, with: { (snapshot) in
             let post = snapshot.value as? [String]
             if let actualPost = post {
-                self.coach.append(actualPost)
-            }
-        })
-        refGoalkeeperHandle = ref?.child("Squad/\(team)/Bramkarze").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.goalkeeper.append(actualPost)
-            }
-        })
-        refDefenderHandle = ref?.child("Squad/\(team)/Obrońcy").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.defender.append(actualPost)
-            }
-        })
-        refMidfielderHandle = ref?.child("Squad/\(team)/Pomocnicy").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.midfielder.append(actualPost)
-            }
-        })
-        refStrikerHandle = ref?.child("Squad/\(team)/Napastnicy").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.striker.append(actualPost)
+                self.squad.append(actualPost)
             }
         })
     }

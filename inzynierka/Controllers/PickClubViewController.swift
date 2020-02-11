@@ -1,7 +1,7 @@
 import UIKit
 import Firebase
 
-class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIAdaptivePresentationControllerDelegate {
     
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var teamBadge: UIImageView!
@@ -46,10 +46,14 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
     }
     
+    public func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        pickerView.reloadAllComponents()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         if CheckInternet.Connection(){
             if(self.pickerView.numberOfRows(inComponent: 0) == 0){
-                AppInstance.showLoader()
+                
             }
         }
         else{
@@ -73,9 +77,6 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 self.teams.append(actualPost)
                 self.pickerView.reloadAllComponents()
                 self.teams.sort()
-                if(self.pickerView.numberOfRows(inComponent: 0) == 16){
-                    AppInstance.hideLoader()
-                }
             }
         })
         getBadge(team: "Arka Gdynia")
@@ -175,6 +176,7 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             }
         } else if segue.identifier == "manager" {
             let vc = segue.destination as! DatabaseManagerController
+            vc.presentationController?.delegate = self
             vc.badge = teamBadge.image
             if (selectedTeam != nil) {
                 vc.team = selectedTeam!

@@ -222,6 +222,7 @@
 				D125FEFA2238F0980086B062 /* Products */,
 				49D378A86BA7BA81596F284F /* Pods */,
 				4C5C894B847D4509ACF918A1 /* Frameworks */,
+				D1ACF90623F2A90000BC7D8D /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -278,6 +279,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		D1ACF90623F2A90000BC7D8D /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		D1E5988D23E1969300358502 /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,8 +294,8 @@
 				800B711723A5126100F590ED /* NewsViewController.swift */,
 				800B711523A5126000F590ED /* FullNewsViewController.swift */,
 				800B711B23A5126500F590ED /* TableViewController.swift */,
-				800B711923A5126300F590ED /* ScheduleViewController.swift */,
 				800B711A23A5126400F590ED /* SquadViewController.swift */,
+				800B711923A5126300F590ED /* ScheduleViewController.swift */,
 				800B711823A5126200F590ED /* PlayerInfoController.swift */,
 				800B711323A5125E00F590ED /* InfoViewController.swift */,
 			);

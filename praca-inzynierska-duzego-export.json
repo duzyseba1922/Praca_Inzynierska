@@ -182,118 +182,52 @@
     ]
   },
   "Squad" : {
-      "Arka Gdynia" : {
-          "Trener": [["Aleksandar Rogić","Serbia"]],
-          "Bramkarze": [["Pavels Steinbors","Łotwa"],["Kacper Krzepisz", "Polska"]],
-          "Obrońcy": [["Adam Marciniak","Polska"],["Luka Marić","Chorwacja"]],
-          "Pomocnicy": [["Michał Nalepa","Polska"], ["Marko Vejinović", "Holandia"]],
-          "Napastnicy": [["Rafał Siemaszko", "Polska"], ["Fabian Serrarens","Holandia"]]
-    },
-    "Cracovia" : {
-          "Trener": [["Michał Probierz","Polska"]],
-          "Bramkarze": [["Michal Pesković","Słowacja"],["Adam Wilk", "Polska"]],
-          "Obrońcy": [["Kamil Pestka","Polska"],["Cornel Rapa","Rumunia"]],
-          "Pomocnicy": [["Janusz Gol","Polska"], ["Milan Dimun", "Słowacja"]],
-          "Napastnicy": [["Filip Piszczek", "Polska"], ["Pelle van Amersfoort","Holandia"]]
-    },
-    "Górnik Zabrze" : {
-          "Trener": [["Marcin Brosz","Polska"]],
-          "Bramkarze": [["Martin Chudy","Słowacja"],["Tomasz Loska", "Polska"]],
-          "Obrońcy": [["Michał Koj","Polska"],["Boris Sekulić","Słowacja"]],
-          "Pomocnicy": [["David Kopacz","Polska"], ["Jesus Jimenez", "Hiszpania"]],
-          "Napastnicy": [["Łukasz Wolsztyński", "Polska"], ["Igor Angulo","Hiszpania"]]
-    },
-    "Jagiellonia Białystok" : {
-          "Trener": [["Ireneusz Mamrot","Polska"]],
-          "Bramkarze": [["Krsevan Santini","Chorwacja"],["Grzegorz Sandomierski", "Polska"]],
-          "Obrońcy": [["Jakub Wójcicki","Polska"],["Ivan Runje","Chorwacja"]],
-          "Pomocnicy": [["Bartosz Kwiecień","Polska"], ["Martin Pospisil", "Czechy"]],
-          "Napastnicy": [["Patryk Klimala", "Polska"], ["Jesus Imaz Balleste","Hiszpania"]]
-    },
-    "Korona Kielce" : {
-          "Trener": [["Mirosław Smyła","Polska"]],
-          "Bramkarze": [["Luka Kukić","Łotwa"],["Paweł Sokół", "Polska"]],
-          "Obrońcy": [["Mateusz Spychała","Polska"],["Ivan Marquez","Hiszpania"]],
-          "Pomocnicy": [["Marcin Cebula","Polska"], ["Ognjen Gnjatić", "Chorwacja"]],
-          "Napastnicy": [["Daniel Szelągowski", "Polska"], ["Michal Papadopulos","Czechy"]]
-    },
-    "Lech Poznań" : {
-        "Trener": [["Dariusz Żuraw","Polska"]],
-        "Bramkarze": [["Mickey Van Der Hart","Holandia"],["Karol Szymański", "Polska"],["Krzysztof Bąkowski", "Polska"],["Miłosz Mleczko", "Polska"]],
-        "Obrońcy": [["Thomas Rogne", "Norwegia"],["Robert Gumny", "Polska"],["Dorde Crnomarković", "Serbia"],["Tomasz Dejewski", "Polska"],["Wołodymyr Kostewycz", "Ukraina"],["Lubomir Satka", "Czechy"]],
-        "Pomocnicy": [["Pedro Tiba", "Portugalia"],["Kamil Jóźwiak", "Polska"],["Karlo Muhar", "Chorwacja"],["Darko Jevtić", "Szwajcaria"],["Juliusz Letniowski", "Polska"],["Jakub Moder", "Polska"],["Maciej Makuszewski", "Polska"],["Tomasz Cywka", "Polska"],["Mateusz Skrzypczak", "Polska"],["Filip Marchwiński", "Polska"],["Jakub Kamiński", "Polska"],["Tymoteusz Klupś", "Polska"],["Tymoteusz Puchacz", "Polska"]],
-        "Napastnicy": [["Christian Gytkjaer", "Dania"], ["Paweł Tomczyk", "Polska"],["Timur Żamaletdinow", "Rosja"],["Filip Szymczak", "Polska"],["Joao Amaral", "Portugalia"]]
-    },
-    "Lechia Gdańsk" : {
-          "Trener": [["Piotr Stokowiec","Polska"]],
-          "Bramkarze": [["Zlatan Alomerowić","Niemcy"],["Dusan Kuciak", "Słowacja"]],
-          "Obrońcy": [["Karol Fila","Polska"],["Mario Maloca","Chorwacja"]],
-          "Pomocnicy": [["Maciej Gajos","Polska"], ["Rafał Wolski", "Polska"]],
-          "Napastnicy": [["Artur Sobiech", "Polska"], ["Flavio Paixao","Portugalia"]]
-    },
-    "Legia Warszawa" : {
-          "Trener": [["Aleksandar Vuković","Serbia"]],
-          "Bramkarze": [["Radosław Cierzniak","Polska"],["Radosław Majecki", "Polska"]],
-          "Obrońcy": [["Igor Lewczak","Polska"],["William Remy","Francja"]],
-          "Pomocnicy": [["Paweł Wszołek","Polska"], ["Andre Martins", "Portugalia"]],
-          "Napastnicy": [["Jarosław Niezgoda", "Polska"], ["Jose Kante","Hiszpania"]]
-    },
-    "Piast Gliwice" : {
-          "Trener": [["Waldemar Fornalik","Polska"]],
-          "Bramkarze": [["Frantisek Plach","Słowacja"],["Jakub Szmatuła", "Polska"]],
-          "Obrońcy": [["Tomasz Mokwa","Polska"],["Uros Koron","Słowenia"]],
-          "Pomocnicy": [["Tomasz Jodłowiec","Polska"], ["Gerard Badia", "Hiszpania"]],
-          "Napastnicy": [["Piotr Parzyszek", "Polska"], ["Dani Aquino","Hiszpania"]]
-    },
-    "Pogoń Szczecin" : {
-          "Trener": [["Kosta Runjaić","Niemcy"]],
-          "Bramkarze": [["Dante Stipica","Chorwacja"],["Jakub Bursztyn", "Polska"]],
-          "Obrońcy": [["Mariusz Malec","Polska"],["David Stec","Austria"]],
-          "Pomocnicy": [["Kamil Drygas","Polska"], ["Zvonimir Kozulj", "Chorwacja"]],
-          "Napastnicy": [["Adam Buksa", "Polska"], ["Michalis Manias","Grecja"]]
-    },
-    "Raków Częstochowa" : {
-          "Trener": [["Marek Papszun","Polska"]],
-          "Bramkarze": [["Michał Gliwa","Polska"],["Jakub Szumski", "Polska"]],
-          "Obrońcy": [["Jarosław Jach","Polska"],["Tomas Petrasek","Czechy"]],
-          "Pomocnicy": [["Igor Sapała","Polska"], ["Rusłan Babenko", "Ukraina"]],
-          "Napastnicy": [["Aleksandyr Kolew", "Bułgaria"], ["Sebastian Musiolik","Polska"]]
-    },
-    "Wisła Kraków" : {
-          "Trener": [["Artur Skowronek","Polska"]],
-          "Bramkarze": [["Mateusz Lis","Polska"],["Michał Buchalik", "Polska"]],
-          "Obrońcy": [["Maciej Sadlok","Polska"],["Marcin Wasilewski","Polska"]],
-          "Pomocnicy": [["Michał Mak","Polska"], ["Jakub Błaszczykowski", "Polska"]],
-          "Napastnicy": [["Rafał Boguski", "Polska"], ["Paweł Brożek","Polska"]]
-    },
-    "Wisła Płock" : {
-          "Trener": [["Radosław Sobolewski","Polska"]],
-          "Bramkarze": [["Thomas Dahne","Niemcy"],["Jakub Wrąbel", "Polska"]],
-          "Obrońcy": [["Damian Michalski","Polska"],["Alan Uryga","Polska"]],
-          "Pomocnicy": [["Dominik Furman","Polska"], ["Suad Sahiti", "Serbia"]],
-          "Napastnicy": [["Grzegorz Kuświk", "Polska"], ["Karol Angielski","Polska"]]
-    },
-    "Zagłębie Lubin" : {
-          "Trener": [["Martin Sevela","Słowacja"]],
-          "Bramkarze": [["Dominik Hładun","Polska"],["Konrad Forenc", "Polska"]],
-          "Obrońcy": [["Sasa Balić","Czarnogóra"],["Dominik Jończy","Polska"]],
-          "Pomocnicy": [["Sasa Zivec","Słowenia"], ["Filip Starzyński", "Polska"]],
-          "Napastnicy": [["Patryk Szysz", "Polska"], ["Rok Sirk","Słowenia"]]
-    },
-    "ŁKS Łódź" : {
-          "Trener": [["Kazimierz Moskal","Polska"]],
-          "Bramkarze": [["Arkadiusz Malarz","Polska"],["Dominik Budzyński", "Polska"]],
-          "Obrońcy": [["Artur Bogusz","Polska"],["Jan Grzesik","Polska"]],
-          "Pomocnicy": [["Maciej Wolski","Polska"], ["Dani Ramirez", "Hiszpania"]],
-          "Napastnicy": [["Łukasz Sekulski", "Polska"], ["Rafał Kujawa","Polska"]]
-    },
-    "Śląsk Wrocław" : {
-          "Trener": [["Vitezslav Lavicka","Czechy"]],
-          "Bramkarze": [["Matus Putnocky","Słowacja"],["Dariusz Szczerbal", "Polska"]],
-          "Obrońcy": [["Piotr Celeban","Polska"],["Dino Stiglec","Chorwacja"]],
-          "Pomocnicy": [["Przemysław Płacheta","Polska"], ["Robert Pich", "Słowacja"]],
-          "Napastnicy": [["Daniel Szczepan", "Polska"], ["Erik Exposito","Hiszpania"]]
-    }
+      "Arka Gdynia" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    "Cracovia" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    "Górnik Zabrze" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+
+    "Jagiellonia Białystok" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+
+    "Korona Kielce" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Lech Poznań" :
+        [["Dariusz Żuraw","Polska","Trener"],["Mickey Van Der Hart","Holandia","Bramkarze"],["Karol Szymański", "Polska","Bramkarze"],["Krzysztof Bąkowski", "Polska","Bramkarze"],["Miłosz Mleczko", "Polska","Bramkarze"],["Thomas Rogne", "Norwegia","Obrońcy"],["Robert Gumny", "Polska","Obrońcy"],["Dorde Crnomarković", "Serbia","Obrońcy"],["Tomasz Dejewski", "Polska","Obrońcy"],["Volodymyr Kostevych", "Ukraina","Obrońcy"],["Lubomir Satka", "Czechy","Obrońcy"],["Pedro Tiba", "Portugalia","Pomocnicy"],["Kamil Jóźwiak", "Polska","Pomocnicy"],["Karlo Muhar", "Chorwacja","Pomocnicy"],["Dani Ramirez", "Hiszpania","Pomocnicy"],["Juliusz Letniowski", "Polska","Pomocnicy"],["Jakub Moder", "Polska","Pomocnicy"],["Maciej Makuszewski", "Polska"],["Tomasz Cywka", "Polska","Pomocnicy"],["Mateusz Skrzypczak", "Polska","Pomocnicy"],["Filip Marchwiński", "Polska","Pomocnicy"],["Jakub Kamiński", "Polska","Pomocnicy"],["Tymoteusz Klupś", "Polska","Pomocnicy"],["Tymoteusz Puchacz", "Polska","Pomocnicy"], ["Christian Gytkjaer", "Dania","Napastnicy"], ["Paweł Tomczyk", "Polska","Napastnicy"],["Timur Żamaletdinow", "Rosja","Napastnicy"],["Filip Szymczak", "Polska","Napastnicy"],["Joao Amaral", "Portugalia","Napastnicy"]],
+    
+    "Lechia Gdańsk" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Legia Warszawa" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Piast Gliwice" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Pogoń Szczecin" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Raków Częstochowa" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Wisła Kraków" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Wisła Płock" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Zagłębie Lubin" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "ŁKS Łódź" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]],
+    
+    "Śląsk Wrocław" :
+          [["Aleksandar Rogić","Serbia","Trener"],["Pavels Steinbors","Łotwa","Bramkarze"],["Kacper Krzepisz", "Polska","Bramkarze"],["Adam Marciniak","Polska","Obrońcy"],["Luka Marić","Chorwacja","Obrońcy"],["Michał Nalepa","Polska","Pomocnicy"], ["Marko Vejinović", "Holandia","Pomocnicy"],["Rafał Siemaszko", "Polska","Napastnicy"], ["Fabian Serrarens","Holandia","Napastnicy"]]
+    
   },
   "Table" : [ [ "Lech Poznań", "10", "17:13", "15" ], [ "Arka Gdynia", "10", "7:14", "9" ], [ "Cracovia", "10", "16:10", "19" ], [ "Lechia Gdańsk", "10", "13:8", "19" ], [ "Legia Warszawa", "10", "13:10", "17" ], [ "Jagiellonia Białystok", "10", "17:11", "16" ], [ "Pogoń Szczecin", "10", "13:7", "21" ], [ "Piast Gliwice", "10", "10:8", "15" ], [ "Zagłębie Lubin", "10", "19:17", "12" ], [ "Wisła Kraków", "10", "13:11", "11" ], [ "ŁKS Łódź", "10", "8:21", "4" ], [ "Śląsk Wrocław", "10", "14:10", "17" ], [ "Raków Częstochowa", "10", "11:16", "9" ], [ "Górnik Zabrze", "10", "9:10", "12" ], [ "Korona Kielce", "10", "5:13", "8" ], [ "Wisła Płock", "10", "11:17", "16" ] ],
   "Teams" : [ "Lech Poznań", "Arka Gdynia", "Cracovia", "Lechia Gdańsk", "Legia Warszawa", "Jagiellonia Białystok", "Pogoń Szczecin", "Piast Gliwice", "Zagłębie Lubin", "Wisła Kraków", "ŁKS Łódź", "Śląsk Wrocław", "Raków Częstochowa", "Górnik Zabrze", "Korona Kielce", "Wisła Płock" ]

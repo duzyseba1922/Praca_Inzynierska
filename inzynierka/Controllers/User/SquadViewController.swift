@@ -1,13 +1,17 @@
 import UIKit
+import Firebase
 import MarqueeLabel
 
 class SquadViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var ref: DatabaseReference?
+    
+    var squad = [[String]]()
     var coach = [[String]]()
-    var goalkeeper = [[String]]()
-    var defender = [[String]]()
-    var midfielder = [[String]]()
-    var striker = [[String]]()
+    var gk = [[String]]()
+    var def = [[String]]()
+    var mid = [[String]]()
+    var st = [[String]]()
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
@@ -18,10 +22,31 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         let tabBar = tabBarController as! TabBarViewController
         
+        squad = tabBar.squad
+        squad.forEach { (players) in
+            for x in 0...players.count - 1 {
+                switch players[x] {
+                    case "Bramkarze":
+                        gk.append(players)
+                    case "Obrońcy":
+                        def.append(players)
+                    case "Pomocnicy":
+                        mid.append(players)
+                    case "Napastnicy":
+                        st.append(players)
+                    case "Trener":
+                        coach.append(players)
+                    default:
+                        print("error")
+                }
+            }
+        }
+        
         infoLabel.text = "\(tabBar.team), Założony: \(tabBar.founded), Barwy: \(tabBar.colors), Stadion: \(tabBar.stadium), Wartość drużyny: \(tabBar.teamValue), Sukcesy: \(tabBar.trophies.joined(separator: ", "))"
         infoLabel.type = .continuous
         infoLabel.textAlignment = .left
         infoLabel.speed = .duration(20.0)
+        
         infoLabel.fadeLength = 15.0
         infoLabel.leadingBuffer = 40.0
         
@@ -32,15 +57,14 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         tableView.layer.masksToBounds = true
         tableView.layer.cornerRadius = 10
-        coach = tabBar.coach
-        goalkeeper = tabBar.goalkeeper
-        defender = tabBar.defender
-        midfielder = tabBar.midfielder
-        striker = tabBar.striker
+        
+        
         tableView.reloadData()
+        
         if(tableView.numberOfRows(inSection: 0) != 0){
             AppInstance.hideLoader()
         }
+        
         imageView.image = tabBar.badge
         imageView.backgroundColor = UIColor(red: 255/255, green: 224/255, blue: 178/255, alpha: 0.9)
         imageView.layer.masksToBounds = true
@@ -54,33 +78,31 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         destinationVC.cellId = selectedRowIndex?.row
         destinationVC.team = tabBar.team
-        let position = selectedRowIndex?.section
-        switch position! {
+        switch selectedRowIndex?.section {
             case 0:
-                destinationVC.pos = "Trener"
+                destinationVC.pos = coach[selectedRowIndex!.row][2]
                 destinationVC.nation = coach[selectedRowIndex!.row][1]
                 destinationVC.name = coach[selectedRowIndex!.row][0]
             case 1:
-                destinationVC.pos = "Bramkarz"
-                destinationVC.nation = goalkeeper[selectedRowIndex!.row][1]
-                destinationVC.name = goalkeeper[selectedRowIndex!.row][0]
+                destinationVC.pos = gk[selectedRowIndex!.row][2]
+                destinationVC.nation = gk[selectedRowIndex!.row][1]
+                destinationVC.name = gk[selectedRowIndex!.row][0]
             case 2:
-                destinationVC.pos = "Obrońca"
-                destinationVC.nation = defender[selectedRowIndex!.row][1]
-                destinationVC.name = defender[selectedRowIndex!.row][0]
+                destinationVC.pos = def[selectedRowIndex!.row][2]
+                destinationVC.nation = def[selectedRowIndex!.row][1]
+                destinationVC.name = def[selectedRowIndex!.row][0]
             case 3:
-                destinationVC.pos = "Pomocnik"
-                destinationVC.nation = midfielder[selectedRowIndex!.row][1]
-                destinationVC.name = midfielder[selectedRowIndex!.row][0]
+                destinationVC.pos = mid[selectedRowIndex!.row][2]
+                destinationVC.nation = mid[selectedRowIndex!.row][1]
+                destinationVC.name = mid[selectedRowIndex!.row][0]
             case 4:
-                destinationVC.pos = "Napastnik"
-                destinationVC.nation = striker[selectedRowIndex!.row][1]
-                destinationVC.name = striker[selectedRowIndex!.row][0]
+                destinationVC.pos = st[selectedRowIndex!.row][2]
+                destinationVC.nation = st[selectedRowIndex!.row][1]
+                destinationVC.name = st[selectedRowIndex!.row][0]
             default:
-                destinationVC.pos = "Piłkarz"
-                destinationVC.nation = coach[selectedRowIndex!.row][1]
-                destinationVC.name = coach[selectedRowIndex!.row][0]
+                print("error")
         }
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -95,7 +117,7 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
         label.textColor = UIColor.white
         switch section {
             case 0:
-                label.text = "Trener"
+                label.text = "Trenerzy"
             case 1:
                 label.text = "Bramkarze"
             case 2:
@@ -105,9 +127,8 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
             case 4:
                 label.text = "Napastnicy"
             default:
-                label.text = "Skład"
+                print("error")
         }
-        
         let tabBar = tabBarController as! TabBarViewController
         
         switch tabBar.team {
@@ -141,20 +162,22 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var counter: Int = 0
         switch section {
             case 0:
-                return coach.count
+                counter = coach.count
             case 1:
-                return goalkeeper.count
+                counter = gk.count
             case 2:
-                return defender.count
+                counter = def.count
             case 3:
-                return midfielder.count
+                counter = mid.count
             case 4:
-                return striker.count
+                counter = st.count
             default:
-                return coach.count
+                print("error")
         }
+        return counter
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -166,17 +189,17 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
                 cell?.textLabel?.text = coach[indexPath.row][0]
                 cell?.detailTextLabel?.text = coach[indexPath.row][1]
             case 1:
-                cell?.textLabel?.text = goalkeeper[indexPath.row][0]
-                cell?.detailTextLabel?.text = goalkeeper[indexPath.row][1]
+                cell?.textLabel?.text = gk[indexPath.row][0]
+                cell?.detailTextLabel?.text = gk[indexPath.row][1]
             case 2:
-                cell?.textLabel?.text = defender[indexPath.row][0]
-                cell?.detailTextLabel?.text = defender[indexPath.row][1]
+                cell?.textLabel?.text = def[indexPath.row][0]
+                cell?.detailTextLabel?.text = def[indexPath.row][1]
             case 3:
-                cell?.textLabel?.text = midfielder[indexPath.row][0]
-                cell?.detailTextLabel?.text = midfielder[indexPath.row][1]
+                cell?.textLabel?.text = mid[indexPath.row][0]
+                cell?.detailTextLabel?.text = mid[indexPath.row][1]
             case 4:
-                cell?.textLabel?.text = striker[indexPath.row][0]
-                cell?.detailTextLabel?.text = striker[indexPath.row][1]
+                cell?.textLabel?.text = st[indexPath.row][0]
+                cell?.detailTextLabel?.text = st[indexPath.row][1]
             default:
                 cell?.textLabel?.text = coach[indexPath.row][0]
                 cell?.detailTextLabel?.text = coach[indexPath.row][1]

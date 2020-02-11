@@ -97,35 +97,7 @@ class RecordsListController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func getSquad(){
-        refHandle = ref?.child("\(chosenTab)/\(team)/Trener").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.list.append(actualPost)
-                self.tableView.reloadData()
-            }
-        })
-        refHandle = ref?.child("\(chosenTab)/\(team)/Bramkarze").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.list.append(actualPost)
-                self.tableView.reloadData()
-            }
-        })
-        refHandle = ref?.child("\(chosenTab)/\(team)/Obrońcy").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.list.append(actualPost)
-                self.tableView.reloadData()
-            }
-        })
-        refHandle = ref?.child("\(chosenTab)/\(team)/Pomocnicy").observe(.childAdded, with: { (snapshot) in
-            let post = snapshot.value as? [String]
-            if let actualPost = post {
-                self.list.append(actualPost)
-                self.tableView.reloadData()
-            }
-        })
-        refHandle = ref?.child("\(chosenTab)/\(team)/Napastnicy").observe(.childAdded, with: { (snapshot) in
+        refHandle = ref?.child("\(chosenTab)/\(team)").observe(.childAdded, with: { (snapshot) in
             let post = snapshot.value as? [String]
             if let actualPost = post {
                 self.list.append(actualPost)
