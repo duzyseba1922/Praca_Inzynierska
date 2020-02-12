@@ -21,6 +21,7 @@ class SquadManagerController: UIViewController, UIPickerViewDelegate, UIPickerVi
     var listOfPositions = ["Trener","Bramkarze","Obrońcy","Pomocnicy","Napastnicy"]
     var intKeys = [Int]()
     
+    @IBOutlet weak var confirmButton: UIButton!
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var playerImage: UIImageView!
     @IBOutlet weak var firstName: UITextField!
@@ -68,9 +69,12 @@ class SquadManagerController: UIViewController, UIPickerViewDelegate, UIPickerVi
         
         ref = Database.database().reference()
         getSquad()
+        getKeys()
         
         positionPicker.delegate = self
         positionPicker.dataSource = self
+        addImageButton.layer.cornerRadius = 10
+        confirmButton.layer.cornerRadius = 10
         
         if (chosenOption == "edit") {
             getImage()
@@ -85,6 +89,16 @@ class SquadManagerController: UIViewController, UIPickerViewDelegate, UIPickerVi
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
+    }
+    
+    func getKeys() {
+        ref?.child("\(chosenTab)/\(team)").observeSingleEvent(of: .value, with: { (snapshot) in
+            for child in snapshot.children {
+                let snap = child as! DataSnapshot
+                let key = Int(snap.key)
+                self.intKeys.append(key!)
+            }
+        })
     }
     
     func setDefaultValue(item: String){
@@ -122,7 +136,7 @@ class SquadManagerController: UIViewController, UIPickerViewDelegate, UIPickerVi
             } else {
                 return str
             }
-        }
+        } 
         return str
     }
     
@@ -160,38 +174,59 @@ class SquadManagerController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     @IBAction func confirmButton(_ sender: Any) {
-        if playerImage.image != nil {
-            let data = playerImage.image?.pngData()
-
-            let metadata = StorageMetadata()
-            metadata.contentType = "image/png"
-            let deleteRef = Storage.storage().reference().child("players/\(team)/\(normalize("\(list[cellId][0])")).png")
-            let uploadRef = Storage.storage().reference().child("players/\(team)/\(normalize("\(firstName.text!) \(lastName.text!)")).png")
-
-            deleteRef.delete { (error) in
-                if let error = error {
-                    print(error)
-                } else {}
-            }
-            uploadRef.putData(data!, metadata: metadata) { (metadata, error) in
-                guard let metadata = metadata else {
-                    return
-                }
-            }
-        } else {
-            print("error")
-        }
-        
         if chosenOption == "add" {
+            if playerImage.image != nil {
+                let data = playerImage.image?.pngData()
+
+                let metadata = StorageMetadata()
+                metadata.contentType = "image/png"
+                let uploadRef = Storage.storage().reference().child("players/\(team)/\(normalize("\(firstName.text!) \(lastName.text!)")).png")
+                uploadRef.putData(data!, metadata: metadata) { (metadata, error) in
+                    guard let metadata = metadata else {
+                        return
+                    }
+                }
+            } else {
+                print("error")
+            }
             if position == "" {
-                position = "Bramkarze"
+                position = "Trener"
             } else {}
-            ref?.child("\(chosenTab)/\(team)/\(intKeys.max()! + 1)/0").setValue("\(firstName.text!) \(lastName.text!)")
-            ref?.child("\(chosenTab)/\(team)/\(intKeys.max()! + 1)/1").setValue(nationality.text!)
-            ref?.child("\(chosenTab)/\(team)/\(intKeys.max()! + 1)/2").setValue(position)
+            if (intKeys.max() != nil) {
+                ref?.child("\(chosenTab)/\(team)/\(intKeys.max()! + 1)/0").setValue("\(firstName.text!) \(lastName.text!)")
+                ref?.child("\(chosenTab)/\(team)/\(intKeys.max()! + 1)/1").setValue(nationality.text!)
+                ref?.child("\(chosenTab)/\(team)/\(intKeys.max()! + 1)/2").setValue(position)
+            } else {
+                ref?.child("\(chosenTab)/\(team)/0/0").setValue("\(firstName.text!) \(lastName.text!)")
+                ref?.child("\(chosenTab)/\(team)/0/1").setValue(nationality.text!)
+                ref?.child("\(chosenTab)/\(team)/0/2").setValue(position)
+            }
             self.dismiss(animated: true, completion: nil)
         } else if chosenOption == "edit" {
-            
+            if playerImage.image != nil {
+                let data = playerImage.image?.pngData()
+
+                let metadata = StorageMetadata()
+                metadata.contentType = "image/png"
+                let deleteRef = Storage.storage().reference().child("players/\(team)/\(normalize("\(list[cellId][0])")).png")
+                let uploadRef = Storage.storage().reference().child("players/\(team)/\(normalize("\(firstName.text!) \(lastName.text!)")).png")
+
+                deleteRef.delete { (error) in
+                    if let error = error {
+                        print(error)
+                    } else {}
+                }
+                uploadRef.putData(data!, metadata: metadata) { (metadata, error) in
+                    guard let metadata = metadata else {
+                        return
+                    }
+                }
+            } else {
+                print("error")
+            }
+            ref?.child("\(chosenTab)/\(team)/\(cellId)/0").setValue("\(firstName.text!) \(lastName.text!)")
+            ref?.child("\(chosenTab)/\(team)/\(cellId)/1").setValue(nationality.text!)
+            ref?.child("\(chosenTab)/\(team)/\(cellId)/2").setValue(position)
             delegate.updateSquad()
             self.dismiss(animated: true, completion: nil)
         }

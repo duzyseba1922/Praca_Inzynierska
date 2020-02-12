@@ -47,6 +47,8 @@ class PickClubViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     public func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        teams.removeAll()
+        getTeams()
         pickerView.reloadAllComponents()
     }
     

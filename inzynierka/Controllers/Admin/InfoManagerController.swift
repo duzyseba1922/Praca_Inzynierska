@@ -31,6 +31,8 @@ class InfoManagerController: UIViewController {
         ref = Database.database().reference()
         getInfo()
         
+        confirmButton.layer.cornerRadius = 10
+        
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
@@ -39,7 +41,7 @@ class InfoManagerController: UIViewController {
     func getInfo(){
         refHandle = ref?.child("Info/\(team)/Founded").observe(.value, with: { (snapshot) in
             let post = snapshot.value as? String
-            self.foundedTextField.text! = post!
+            self.foundedTextField.text! = post ?? ""
         })
         refHandle = ref?.child("Info/\(team)/Trophies").observe(.childAdded, with: { (snapshot) in
             let post = snapshot.value as? String
@@ -50,11 +52,11 @@ class InfoManagerController: UIViewController {
         })
         refHandle = ref?.child("Info/\(team)/Colors").observe(.value, with: { (snapshot) in
             let post = snapshot.value as? String
-            self.colorsTextField.text! = post!
+            self.colorsTextField.text! = post ?? ""
         })
         refHandle = ref?.child("Info/\(team)/Stadium").observe(.value, with: { (snapshot) in
             let post = snapshot.value as? String
-            self.stadium = post!
+            self.stadium = post ?? ""
             if let range = self.stadium.range(of: "(") {
                 let sCapacity = self.stadium[range.upperBound...]
                 let sName = self.stadium[self.stadium.startIndex..<range.lowerBound]
@@ -65,7 +67,7 @@ class InfoManagerController: UIViewController {
         })
         refHandle = ref?.child("Info/\(team)/TeamValue").observe(.value, with: { (snapshot) in
             let post = snapshot.value as? String
-            self.teamValueTextField.text! = post!
+            self.teamValueTextField.text! = post ?? ""
         })
     }
     

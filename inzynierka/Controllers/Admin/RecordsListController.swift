@@ -133,6 +133,20 @@ class RecordsListController: UIViewController, UITableViewDelegate, UITableViewD
         self.present(alert, animated: true, completion: nil)
     }
     
+    func normalize(_ str: String) -> String {
+        let original = ["Ą", "ą", "Ć", "ć", "Ę", "ę", "Ł", "ł", "Ń", "ń", "Ó", "ó", "Ś", "ś", "Ź", "ź", "Ż", "ż"]
+        let normalized = ["A", "a", "C", "c", "E", "e", "L", "l", "N", "n", "O", "o", "S", "s", "Z", "z", "Z", "z"]
+        var str = str
+        for x in 0...original.count - 1 {
+            if original.contains(where: str.contains) == true {
+                str = str.replacingOccurrences(of: original[x], with: normalized[x])
+            } else {
+                return str
+            }
+        }
+        return str
+    }
+    
     func deleteRecords() {
         let selectedRowIndex = self.tableView.indexPathForSelectedRow
         let cellId = selectedRowIndex!.row
@@ -145,6 +159,12 @@ class RecordsListController: UIViewController, UITableViewDelegate, UITableViewD
                 list.removeAll()
                 getSchedule()
             case "Squad":
+                let deleteRef = Storage.storage().reference().child("players/\(team)/\(normalize("\(list[cellId][0])")).png")
+                deleteRef.delete { (error) in
+                    if let error = error {
+                        print(error)
+                    } else {}
+                }
                 list.removeAll()
                 getSquad()
             default:

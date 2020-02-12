@@ -33,6 +33,8 @@ class TeamManagerController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
         
         self.imagePicker.delegate = self
+        addImage.layer.cornerRadius = 10
+        confirmButton.layer.cornerRadius = 10
 
         ref = Database.database().reference()
         
@@ -190,38 +192,31 @@ class TeamManagerController: UIViewController, UIImagePickerControllerDelegate, 
                     let snap = child as! DataSnapshot
                     let key = Int(snap.key)
                     self.intKeys.append(key!)
-                    self.maxKey = self.intKeys.max()!
+                    self.maxKey = self.intKeys.max() ?? -1
                     if self.intKeys.count == self.teams.count {
                         self.ref?.child("\(self.chosenTab)/\(String(describing: self.maxKey + 1))").setValue(self.teamName.text!)
                         self.ref?.child("Table/\(String(describing: self.maxKey + 1))/0").setValue(self.teamName.text!)
-                        self.ref?.child("Table/\(String(describing: self.maxKey + 1))/1").setValue("")
-                        self.ref?.child("Table/\(String(describing: self.maxKey + 1))/2").setValue("")
-                        self.ref?.child("Table/\(String(describing: self.maxKey + 1))/3").setValue("")
+                        self.ref?.child("Table/\(String(describing: self.maxKey + 1))/1").setValue("0")
+                        self.ref?.child("Table/\(String(describing: self.maxKey + 1))/2").setValue("0:0")
+                        self.ref?.child("Table/\(String(describing: self.maxKey + 1))/3").setValue("0")
                     }
                 }
             })
-            ref?.child("News/\(teamName.text!)/0/0").setValue("")
-            ref?.child("News/\(teamName.text!)/0/1").setValue("")
-            ref?.child("Schedule/\(teamName.text!)/0/0").setValue("")
-            ref?.child("Schedule/\(teamName.text!)/0/1").setValue("")
-            ref?.child("Schedule/\(teamName.text!)/0/2").setValue("")
-            ref?.child("Schedule/\(teamName.text!)/0/3").setValue("")
-            ref?.child("Schedule/\(teamName.text!)/0/4").setValue("")
-            ref?.child("Info/\(teamName.text!)/Colors").setValue("")
-            ref?.child("Info/\(teamName.text!)/Founded").setValue("")
-            ref?.child("Info/\(teamName.text!)/Stadium").setValue("")
-            ref?.child("Info/\(teamName.text!)/TeamValue").setValue("")
-            ref?.child("Info/\(teamName.text!)/Trophies").setValue([""])
-            ref?.child("Squad/\(teamName.text!)/Bramkarze/0/0").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Bramkarze/0/1").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Obrońcy/0/0").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Obrońcy/0/1").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Pomocnicy/0/0").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Pomocnicy/0/1").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Napastnicy/0/0").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Napastnicy/0/1").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Trener/0/0").setValue("")
-            ref?.child("Squad/\(teamName.text!)/Trener/0/1").setValue("")
+            ref?.child("News/\(teamName.text!)/0/0").setValue("Wprowadź pierwszy nagłówek")
+            ref?.child("News/\(teamName.text!)/0/1").setValue("Wprowadź pierwszą treść")
+            ref?.child("Schedule/\(teamName.text!)/0/0").setValue("01-01-2020 15:30")
+            ref?.child("Schedule/\(teamName.text!)/0/1").setValue("Śląsk Wrocław")
+            ref?.child("Schedule/\(teamName.text!)/0/2").setValue("0")
+            ref?.child("Schedule/\(teamName.text!)/0/3").setValue("0")
+            ref?.child("Schedule/\(teamName.text!)/0/4").setValue("true")
+            ref?.child("Info/\(teamName.text!)/Colors").setValue("Wprowadź barwy")
+            ref?.child("Info/\(teamName.text!)/Founded").setValue("Wprowadż rok założenia")
+            ref?.child("Info/\(teamName.text!)/Stadium").setValue("Wprowadż nazwę stadionu (12 345)")
+            ref?.child("Info/\(teamName.text!)/TeamValue").setValue("123456789 €")
+            ref?.child("Info/\(teamName.text!)/Trophies").setValue(["Wprowadź dane o trofeach"])
+            ref?.child("Squad/\(teamName.text!)/0/0").setValue("Wprowadź imię i nazwisko")
+            ref?.child("Squad/\(teamName.text!)/0/1").setValue("Wprowadź narodowość")
+            ref?.child("Squad/\(teamName.text!)/0/2").setValue("Trener")
             self.dismiss(animated: true, completion: nil)
         } else if chosenOption == "edit" {
             changeData()

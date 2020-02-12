@@ -36,10 +36,21 @@ class NewsManagerController: UIViewController,UITextViewDelegate {
         
         ref = Database.database().reference()
         getNews()
+        getKeys()
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
+    }
+    
+    func getKeys(){
+        ref?.child("\(chosenTab)/\(team)").observeSingleEvent(of: .value, with: { (snapshot) in
+            for child in snapshot.children {
+                let snap = child as! DataSnapshot
+                let key = Int(snap.key)
+                self.intKeys.append(key!)
+            }
+        })
     }
     
     func getNews(){
@@ -53,15 +64,8 @@ class NewsManagerController: UIViewController,UITextViewDelegate {
     
     @IBAction func confirmButton(_ sender: Any) {
         if chosenOption == "add" {
-            ref?.child("\(chosenTab)/\(team)").observeSingleEvent(of: .value, with: { (snapshot) in
-                for child in snapshot.children {
-                    let snap = child as! DataSnapshot
-                    let key = Int(snap.key)
-                    self.intKeys.append(key!)
-                }
-            })
-            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/0").setValue(newsTitle.text!)
-            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/1").setValue(newsContent.text!)
+            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/0").setValue(newsTitle.text!)
+            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/1").setValue(newsContent.text!)
             self.dismiss(animated: true, completion: nil)
         } else if chosenOption == "edit" {
             ref?.child("\(chosenTab)/\(team)/\(cellId)/0").setValue(newsTitle.text!)

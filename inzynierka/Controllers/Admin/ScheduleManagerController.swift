@@ -34,6 +34,7 @@ class ScheduleManagerController: UIViewController, UITextFieldDelegate, UIPicker
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         ref = Database.database().reference()
+        getKeys()
         if chosenOption == "add" {
             getTeams()
         }
@@ -46,6 +47,7 @@ class ScheduleManagerController: UIViewController, UITextFieldDelegate, UIPicker
         goalsConceded.delegate = self
         oponentPicker.delegate = self
         oponentPicker.dataSource = self
+        confirmButton.layer.cornerRadius = 10
         
         if chosenOption == "edit" {
             homeOrAwaySwitch.isOn = NSString(string: list[cellId][4]).boolValue
@@ -61,6 +63,16 @@ class ScheduleManagerController: UIViewController, UITextFieldDelegate, UIPicker
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
+    }
+    
+    func getKeys() {
+        ref?.child("\(chosenTab)/\(team)").observeSingleEvent(of: .value, with: { (snapshot) in
+            for child in snapshot.children {
+                let snap = child as! DataSnapshot
+                let key = Int(snap.key)
+                self.intKeys.append(key!)
+            }
+        })
     }
     
     func getSchedule(){
@@ -117,23 +129,16 @@ class ScheduleManagerController: UIViewController, UITextFieldDelegate, UIPicker
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         pickedDate = dateFormatter.string(from: datePicker.date)
         if chosenOption == "add" {
-            ref?.child("\(chosenTab)/\(team)").observeSingleEvent(of: .value, with: { (snapshot) in
-                for child in snapshot.children {
-                    let snap = child as! DataSnapshot
-                    let key = Int(snap.key)
-                    self.intKeys.append(key!)
-                }
-            })
-            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/0").setValue(pickedDate)
-            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/1").setValue(oponent)
+            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/0").setValue(pickedDate)
+            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/1").setValue(oponent)
             if (goalsScored.text == "" || goalsConceded.text == "") {
-                ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/2").setValue("-")
-                ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/3").setValue("-")
+                ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/2").setValue("-")
+                ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/3").setValue("-")
             } else {
-                ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/2").setValue(goalsScored.text!)
-                ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/3").setValue(goalsConceded.text!)
+                ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/2").setValue(goalsScored.text!)
+                ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/3").setValue(goalsConceded.text!)
             }
-            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max()! + 1))/4").setValue("\(homeOrAwaySwitch.isOn)")
+            ref?.child("\(chosenTab)/\(team)/\(String(describing: intKeys.max() ?? -1 + 1))/4").setValue("\(homeOrAwaySwitch.isOn)")
         }else if chosenOption == "edit" {
             ref?.child("\(chosenTab)/\(team)/\(cellId)/0").setValue(pickedDate)
             ref?.child("\(chosenTab)/\(team)/\(cellId)/1").setValue(oponent)

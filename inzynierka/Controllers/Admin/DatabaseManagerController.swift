@@ -1,6 +1,6 @@
 import UIKit
 
-class DatabaseManagerController: UIViewController {
+class DatabaseManagerController: UIViewController, UIAdaptivePresentationControllerDelegate {
 
     var team: String = ""
     var badge: UIImage?
@@ -36,6 +36,10 @@ class DatabaseManagerController: UIViewController {
         
         teamName.text = team
         teamBadge.image = badge
+    }
+    
+    public func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        teamName.layoutIfNeeded()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

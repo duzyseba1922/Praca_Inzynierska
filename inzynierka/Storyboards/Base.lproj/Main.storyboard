@@ -2314,6 +2314,7 @@
                     <navigationItem key="navigationItem" id="nFb-SA-R1i"/>
                     <connections>
                         <outlet property="addImageButton" destination="Mv2-N6-S9M" id="Zxn-qX-k6W"/>
+                        <outlet property="confirmButton" destination="Jxi-HN-jAD" id="8hD-HZ-tDa"/>
                         <outlet property="firstName" destination="1hf-Kl-dco" id="KyF-a7-cck"/>
                         <outlet property="lastName" destination="uI7-IJ-pZY" id="oAq-SH-AV9"/>
                         <outlet property="nationality" destination="VRd-6Y-TSG" id="Z8C-WF-1Ky"/>

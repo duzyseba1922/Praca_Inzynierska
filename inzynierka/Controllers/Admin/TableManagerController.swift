@@ -19,11 +19,12 @@ class TableManagerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-            ref = Database.database().reference()
-            getTable()
-            let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
-            tap.cancelsTouchesInView = false
-            self.view.addGestureRecognizer(tap)
+        ref = Database.database().reference()
+        getTable()
+        confirmButton.layer.cornerRadius = 10
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
     }
     
     func getTable(){
