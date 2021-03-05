@@ -1,4 +1,4 @@
-module Pods_inzynierka {
+framework module Pods_inzynierka {
   umbrella header "Pods-inzynierka-umbrella.h"
 
   export *

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752007D9257F92824F0C300E /* Pods_inzynierka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B7BBBEFF40420B52BD506B /* Pods_inzynierka.framework */; };
 		800B711D23A5126600F590ED /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711323A5125E00F590ED /* InfoViewController.swift */; };
 		800B711E23A5126600F590ED /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711423A5125F00F590ED /* TabBarViewController.swift */; };
 		800B711F23A5126600F590ED /* FullNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800B711523A5126000F590ED /* FullNewsViewController.swift */; };
@@ -44,8 +45,6 @@
 		D125FF332238F11A0086B062 /* LaunchScreen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D125FF202238F1180086B062 /* LaunchScreen.jpg */; };
 		D125FF362238F11A0086B062 /* user_group_man_man.png in Resources */ = {isa = PBXBuildFile; fileRef = D125FF232238F1190086B062 /* user_group_man_man.png */; };
 		D142D6D222524C4E00E60E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D142D6D122524C4E00E60E69 /* Assets.xcassets */; };
-		D1ABB65123E82DD9002F17A8 /* Pods_inzynierka.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D1C9173023E821B400C4567F /* Pods_inzynierka.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D1E5988C23E18DA200358502 /* TabManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5988B23E18DA200358502 /* TabManagerController.swift */; };
 		D1E5989023E1982600358502 /* NewsManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5988F23E1982600358502 /* NewsManagerController.swift */; };
 		D1E5989223E1984F00358502 /* TableManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5989123E1984F00358502 /* TableManagerController.swift */; };
@@ -55,7 +54,6 @@
 		D1E5989A23E198DC00358502 /* TeamManagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5989923E198DC00358502 /* TeamManagerController.swift */; };
 		D1E5989C23E1A80D00358502 /* RecordsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5989B23E1A80D00358502 /* RecordsListController.swift */; };
 		D1FD589423E0405100F6FADC /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD589323E0405100F6FADC /* InitialViewController.swift */; };
-		D58D76D040B56A833EE27745 /* libPods-inzynierka.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10583CF0E2A7FEEBDFBC3DE8 /* libPods-inzynierka.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,7 +63,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D1ABB65123E82DD9002F17A8 /* Pods_inzynierka.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -75,7 +72,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D1C9173023E821B400C4567F /* Pods_inzynierka.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,8 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		10583CF0E2A7FEEBDFBC3DE8 /* libPods-inzynierka.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-inzynierka.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inzynierka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C738BE1EF2EB7912978D5B4 /* Pods-inzynierka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inzynierka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka.debug.xcconfig"; sourceTree = "<group>"; };
 		800B711323A5125E00F590ED /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		800B711423A5125F00F590ED /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		800B711523A5126000F590ED /* FullNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullNewsViewController.swift; sourceTree = "<group>"; };
@@ -108,12 +103,10 @@
 		80A3D48123462A8400A1B2A8 /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
 		80F54203239509D10066B833 /* CustomLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoader.swift; sourceTree = "<group>"; };
 		80F5420523950BCC0066B833 /* ekstralogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ekstralogo.png; sourceTree = "<group>"; };
-		8AA295DC4E695FEB8598C1CD /* Pods-inzynierka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inzynierka.release.xcconfig"; path = "Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka.release.xcconfig"; sourceTree = "<group>"; };
-		BE030566ECC8D996E9EDD6DA /* Pods-inzynierka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inzynierka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF2D2D29620532D40E65802 /* Pods-inzynierka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-inzynierka.release.xcconfig"; path = "Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka.release.xcconfig"; sourceTree = "<group>"; };
 		D122AE4B23E04FC300891EE5 /* AdminLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginController.swift; sourceTree = "<group>"; };
 		D122AE4D23E0760200891EE5 /* DatabaseManagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerController.swift; sourceTree = "<group>"; };
 		D123A25F2246B0E200EB8AD3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D125FEF92238F0980086B062 /* inzynierka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inzynierka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D125FEFC2238F0980086B062 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D125FF012238F0980086B062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D125FF092238F09B0086B062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -134,7 +127,9 @@
 		D1E5989723E1989800358502 /* InfoManagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoManagerController.swift; sourceTree = "<group>"; };
 		D1E5989923E198DC00358502 /* TeamManagerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManagerController.swift; sourceTree = "<group>"; };
 		D1E5989B23E1A80D00358502 /* RecordsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsListController.swift; sourceTree = "<group>"; };
+		D1ECD01625F2ADFE0049D832 /* inzynierka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = inzynierka.app; path = "/Users/sebastianniestoj/Downloads/Praca_Inzynierska-master/build/Debug-iphoneos/inzynierka.app"; sourceTree = "<absolute>"; };
 		D1FD589323E0405100F6FADC /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		D3B7BBBEFF40420B52BD506B /* Pods_inzynierka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_inzynierka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,30 +137,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D58D76D040B56A833EE27745 /* libPods-inzynierka.a in Frameworks */,
+				752007D9257F92824F0C300E /* Pods_inzynierka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49D378A86BA7BA81596F284F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BE030566ECC8D996E9EDD6DA /* Pods-inzynierka.debug.xcconfig */,
-				8AA295DC4E695FEB8598C1CD /* Pods-inzynierka.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4C5C894B847D4509ACF918A1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				10583CF0E2A7FEEBDFBC3DE8 /* libPods-inzynierka.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		800B711223A5124D00F590ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,19 +197,9 @@
 			isa = PBXGroup;
 			children = (
 				D125FEFB2238F0980086B062 /* inzynierka */,
-				D125FEFA2238F0980086B062 /* Products */,
-				49D378A86BA7BA81596F284F /* Pods */,
-				4C5C894B847D4509ACF918A1 /* Frameworks */,
-				D1ACF90623F2A90000BC7D8D /* Recovered References */,
+				DD80D9147DEDA6E268975CC4 /* Pods */,
+				DC10FE461D74EAB9457D7D84 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		D125FEFA2238F0980086B062 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D125FEF92238F0980086B062 /* inzynierka.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D125FEFB2238F0980086B062 /* inzynierka */ = {
@@ -279,14 +247,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		D1ACF90623F2A90000BC7D8D /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				39DD50CC384F9A67167D7457 /* Pods_inzynierka.framework */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		D1E5988D23E1969300358502 /* User */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +279,23 @@
 			path = Admin;
 			sourceTree = "<group>";
 		};
+		DC10FE461D74EAB9457D7D84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3B7BBBEFF40420B52BD506B /* Pods_inzynierka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD80D9147DEDA6E268975CC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C738BE1EF2EB7912978D5B4 /* Pods-inzynierka.debug.xcconfig */,
+				BBF2D2D29620532D40E65802 /* Pods-inzynierka.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,6 +309,7 @@
 				D125FEF62238F0980086B062 /* Frameworks */,
 				D125FEF72238F0980086B062 /* Resources */,
 				D1C9173123E821B400C4567F /* Embed Frameworks */,
+				6A7E34BCBFADC1290AC33F56 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,7 +317,7 @@
 			);
 			name = inzynierka;
 			productName = inzynierka;
-			productReference = D125FEF92238F0980086B062 /* inzynierka.app */;
+			productReference = D1ECD01625F2ADFE0049D832 /* inzynierka.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -349,7 +327,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Sebastian Niestój";
 				TargetAttributes = {
 					D125FEF82238F0980086B062 = {
@@ -367,7 +345,7 @@
 				Base,
 			);
 			mainGroup = D125FEF02238F0980086B062;
-			productRefGroup = D125FEFA2238F0980086B062 /* Products */;
+			productRefGroup = D125FEF02238F0980086B062;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -408,6 +386,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6A7E34BCBFADC1290AC33F56 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseDatabase/FirebaseDatabase.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseStorage/FirebaseStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseDatabase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-inzynierka/Pods-inzynierka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E4638D338969C4E0CD53ACEE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -510,6 +528,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -573,6 +592,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -605,7 +625,7 @@
 		};
 		D125FF0F2238F09B0086B062 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE030566ECC8D996E9EDD6DA /* Pods-inzynierka.debug.xcconfig */;
+			baseConfigurationReference = 7C738BE1EF2EB7912978D5B4 /* Pods-inzynierka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -625,7 +645,7 @@
 		};
 		D125FF102238F09B0086B062 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AA295DC4E695FEB8598C1CD /* Pods-inzynierka.release.xcconfig */;
+			baseConfigurationReference = BBF2D2D29620532D40E65802 /* Pods-inzynierka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

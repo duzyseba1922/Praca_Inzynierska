@@ -36,8 +36,7 @@ class SquadViewController: UIViewController, UITableViewDataSource, UITableViewD
                         st.append(players)
                     case "Trener":
                         coach.append(players)
-                    default:
-                        print("error")
+                    default: break
                 }
             }
         }
